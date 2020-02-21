@@ -1,0 +1,39 @@
+@mixin flexCentered ($direction){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin primaryButton ($width, $font-size){
+    width: $width;
+    font-family: $font-primary;
+        @include flexCentered(row);
+        font-size: $font-size;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background-color: $color-blue;
+        padding: 0.7%;
+        //border-radius: 15px;
+        cursor: pointer;
+        @media only screen and (min-width: 768px){
+            margin-left: 15%;
+            width: 12%;
+            padding: 0.7%;
+            font-size: $font-size;
+        }
+}
+
+@mixin secondaryButton ($width, $font-size){
+    @include flexCentered(row);
+    font-family: $font-primary;
+    width: $width;
+    font-size: $font-size;
+    background-color: rgba(25, 25, 51, 0.575);
+    border: 1.5px solid $color-blue;
+    font-weight: bold;
+   //border-radius: 15px;
+    padding: 0.7%;
+    cursor: pointer;
+}

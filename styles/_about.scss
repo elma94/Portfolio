@@ -1,0 +1,176 @@
+
+#about{
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 5vh;
+    font-size: 0.8em;
+
+    @media only screen and (min-width: 768px){
+        position: relative;
+        height: 100%;
+        bottom: 20vh;
+        width: 100%;
+        padding-top: 5%;
+        justify-content: flex-start;
+        align-self: center;
+        left: 45vw;
+        background-size: cover;
+        z-index: 2;
+        
+    }
+
+    img{
+        display: none;
+        @media only screen and (min-width: 768px){
+            display: block;
+            width: 25vw;
+            height: 60vh;
+            position: absolute;
+            left: -25vw;
+            top: 22.5vh;
+            z-index: 1;
+        }
+
+        
+    }
+
+    #background-about{
+        display: none;
+        @media only screen and (min-width: 768px){
+            display: block;
+            width: 55vw;
+            background-color: black;
+            height: 70vh;
+            border-top: 2px solid rgb(126, 110, 126);
+            position: absolute; 
+            left: -20vw; 
+            top: 15vh;
+            z-index: -1;
+            margin-right: 1vw;
+        }
+    }
+
+    
+
+  
+    
+    #about-heading{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 5%;
+        margin-right: 5%;
+        //margin-top: -15vh;
+        
+
+        @media only screen and (min-width: 768px){
+            width: 40%;
+           height: 80%;
+           justify-content: center;
+           margin: 0;
+        }
+        
+        
+        #about-name{
+            font-size: 1.4em;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-family: $font-primary;
+            z-index: 1;
+            @media only screen and (min-width: 768px){
+                font-size: 3em;
+                letter-spacing: 0;
+            }
+            
+
+        }
+        #location{
+            font-size: 1.2em;
+            font-family: $font-secondary;
+            padding-top: 4%;
+            @media only screen and (min-width: 768px){
+                padding-top: 2vh;
+            }
+        }
+        #skills{
+            font-family: $font-secondary;
+            font-size: 0.65em;
+            padding-top: 2%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+                @media only screen and (min-width: 768px){
+                    padding-top: 2vh;
+                }
+
+            span{
+                
+                border: 1px solid $color-darker;
+                background-color: rgba(27, 27, 54, 0.411);
+                padding: 1vw 1vw 0vw 1vw;
+                border-radius: 15px;
+                margin-right: 1.5%;
+                @media only screen and (min-width: 768px){
+                    padding: 1% 2%;
+                }
+            }
+        }
+        #bio{
+            font-family: $font-secondary;
+            font-size: 1.1em;
+            display: flex;
+            padding-top: 5%;
+            line-height: 1.5em;
+            flex-direction: column;
+            margin-bottom: 5%;
+            @media only screen and (min-width: 768px){
+                padding-top: 2vh;
+            }
+            @media only screen and (min-width: 768px){
+                width: 30vw;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2%;
+                strong{
+                    letter-spacing: 0.1em;
+                    padding-top: 1.5vh;
+                    padding-bottom: 0;
+                    margin: 0;
+                    
+                }
+            }
+            
+        }
+        #about-cta{
+            @include primaryButton(auto, 0.9em);
+            min-height: 15%;
+            margin-bottom: 5%;
+            @media only screen and (min-width: 768px){
+                margin-left: 0;
+                display: flex;
+                min-width: 50%;
+                min-height: 5%;
+                margin-top: 0;
+                margin-bottom: 2%;
+               
+            }
+        }
+
+        #cv{
+            min-height: 15%;
+            @include secondaryButton(auto, 0.9em);
+            @media only screen and (min-width: 768px){
+                min-height: 5%;
+                width: 50%;
+            }
+        }
+
+    }
+}
+

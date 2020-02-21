@@ -1,0 +1,97 @@
+#contact{
+    position: relative;
+    background-color: black;
+    font-family: $font-primary;
+    height: 60vh;
+    @media only screen and (min-width: 768px){
+        height: 50vh;
+        left: 20vw;
+        right: 20vw;
+        top: 10vh;
+        width: 60vw;
+    }
+    #contact-form{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 100%;
+        
+        @media only screen and (min-width: 768px){
+            max-width: 40%;
+            justify-content: flex-start;
+        }
+        input[type=text], input[type=email]{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgb(49, 0, 128);
+            padding-top: 5%;
+            color: white;
+            font-family: $font-secondary;
+            height: 5vh;
+            font-size: 1.1em;
+            z-index: 2;
+            @media only screen and (min-width: 768px){
+                width:100%;
+            }
+            
+        }
+        textarea{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgb(49, 0, 128);
+            padding-top: 5%;
+            color: white;
+            font-family: $font-secondary;
+            height: 20vh;
+            font-size: 1.1em;
+            z-index: 2;
+            }
+            input[type=submit]{
+                margin-top: 2%;
+                @include primaryButton(100%, 0.9em);
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: none;
+                padding: 4%;
+                z-index: 2;
+                @media only screen and (min-width: 768px){
+                    width:100%;
+                    padding: 2.5%;
+                    margin-top: 2%;
+                    margin-left: 0;
+                }
+                
+            }
+    }
+    span{
+        padding-top: 10%;
+        z-index: 3;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        font-weight: 100;
+        font-family: $font-secondary;
+        color: rgba(255, 255, 255, 0.562);
+        @media only screen and (min-width: 768px){
+            padding-top: 0;
+            margin-top: -15vh;
+            margin-left: 30vw;
+        }
+    }
+    img{
+        position: absolute;
+        top: 0vh;
+        z-index: 1;
+        @media only screen and (min-width: 768px){
+            left: 30vw;
+            top: -5vh;
+            border-top: 2px solid rgb(87, 0, 128);
+        }
+    }
+}

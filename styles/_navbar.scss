@@ -1,0 +1,54 @@
+#navbar{
+    @include flexCentered(row);
+    position: absolute;
+    bottom: 3vh;
+    height: 10vh;
+    z-index: 5;
+    cursor: pointer;
+    
+
+    @media only screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        top: 0;
+        width: 10%;
+        height: 100%;
+        padding-right: 5%;
+    }
+
+    #home-btn{
+        display: flex;
+        order: 1;
+    }
+    .thumbnail{
+        width: 25%;
+        @include flexCentered(column);
+        align-self: flex-end;
+        &:active{
+            filter: brightness(150%);
+        }
+        @media only screen and (min-width: 768px){
+            width: 50%;
+        }
+        img{
+            width: 30%;
+            height: 30%;
+            @media only screen and (min-width: 768px){
+                width: 100%;
+            }
+        }
+        span{
+            padding: 7%;
+            font-family: $font-secondary;
+            text-transform: capitalize;
+            display: none;
+            @media only screen and (min-width: 768px){
+                display: none;
+            }
+        }
+    }
+    
+    
+}
