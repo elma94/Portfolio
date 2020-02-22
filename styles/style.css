@@ -8,7 +8,7 @@ html, body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   color: #ffffff;
   background-position-y: -10px;
