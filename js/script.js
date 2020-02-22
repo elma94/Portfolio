@@ -1,13 +1,14 @@
+
+
 $("document").ready(function(){
-    
-// S I D E B A R
 
-    if (window.matchMedia('(max-width: 768px)').matches){
-        $("#sidebar").hide();
-    } else if(window.matchMedia('(min-width: 768px)').matches){
-        $("#sidebar").show();
-    }
+    // S I D E B A R
 
+if (window.matchMedia('(max-width: 768px)').matches){
+    $("aside").hide();
+} else if(window.matchMedia('(min-width: 768px)').matches){
+    $("aside").show();
+}
 
 // H O M E  S C R E E N
     
@@ -91,7 +92,7 @@ var up=0;
         $("#vocation").hide();
 
         if (window.matchMedia('(max-width: 768px)').matches){
-            $("#about").css({"background-image": "url('../images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
+            $("#about").css({"background-image": "url('./images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
         } else if(window.matchMedia('(min-width: 768px)').matches){
 
         }
