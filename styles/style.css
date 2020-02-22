@@ -855,7 +855,7 @@ header #vocation {
   height: 90%;
   -webkit-transform: translate(20vw);
           transform: translate(20vw);
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/weatherapp.jpg");
+  background-image: url("../images/weatherapp.jpg");
   background-size: 100% 70%;
 }
 
@@ -871,7 +871,7 @@ header #vocation {
   -webkit-transform: translate(30vw);
           transform: translate(30vw);
   height: 70%;
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/jsgame.jpg");
+  background-image: url("../images/jsgame.jpg");
   background-size: 100% 80%;
 }
 
@@ -889,7 +889,7 @@ header #vocation {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/bootstrap.jpg");
+  background-image: url("../images/bootstrap.jpg");
   background-size: 100% 80%;
 }
 
@@ -902,7 +902,7 @@ header #vocation {
 }
 
 #work #card-container #card-4 {
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/website.jpg");
+  background-image: url("../images/website.jpg");
   background-size: 100% 80%;
 }
 
@@ -915,7 +915,7 @@ header #vocation {
 }
 
 #work #card-container #card-5 {
-  background-image: url("C:/Users/pc/Desktop/Portfolio/images/portfolio.jpg");
+  background-image: url("../images/portfolio.jpg");
   background-size: 100% 80%;
 }
 
