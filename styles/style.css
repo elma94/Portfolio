@@ -126,6 +126,7 @@ header #vocation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20%;
 }
 
 @media only screen and (min-width: 768px) {
