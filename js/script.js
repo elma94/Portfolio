@@ -91,7 +91,7 @@ var up=0;
         $("#vocation").hide();
 
         if (window.matchMedia('(max-width: 768px)').matches){
-            $("#about").css({"background-image": "url('C:/Users/pc/Desktop/Portfolio/images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
+            $("#about").css({"background-image": "url('../images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
         } else if(window.matchMedia('(min-width: 768px)').matches){
 
         }

@@ -58,7 +58,7 @@
         #card-1{
             height: 90%;
             transform: translate(20vw);
-            background-image: url("C:/Users/pc/Desktop/Portfolio/images/weatherapp.jpg");
+            background-image: url("../images/weatherapp.jpg");
            
             background-size: 100% 70%;
             @media only screen and (min-width: 768px){
@@ -71,7 +71,7 @@
         #card-2{
            transform: translate(30vw);
            height: 70%;
-           background-image: url("C:/Users/pc/Desktop/Portfolio/images/jsgame.jpg");
+           background-image: url("../images/jsgame.jpg");
            
             background-size: 100% 80%;
            @media only screen and (min-width: 768px){
@@ -83,7 +83,7 @@
         #card-3{
             display: flex;
             align-self: flex-end;
-            background-image: url("C:/Users/pc/Desktop/Portfolio/images/bootstrap.jpg");
+            background-image: url("../images/bootstrap.jpg");
            
             background-size: 100% 80%;
             @media only screen and (min-width: 768px){
@@ -94,7 +94,7 @@
         }
 
         #card-4{
-            background-image: url("C:/Users/pc/Desktop/Portfolio/images/website.jpg");
+            background-image: url("../images/website.jpg");
            
             background-size: 100% 80%;
             @media only screen and (min-width: 768px){
@@ -104,7 +104,7 @@
         }
 
         #card-5{
-            background-image: url("C:/Users/pc/Desktop/Portfolio/images/portfolio.jpg");
+            background-image: url("../images/portfolio.jpg");
            
             background-size: 100% 80%;
             @media only screen and (min-width: 768px){
