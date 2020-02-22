@@ -387,6 +387,7 @@ header #vocation {
   bottom: 3vh;
   height: 10vh;
   z-index: 5;
+  width: 100vw;
   cursor: pointer;
 }
 
@@ -453,13 +454,15 @@ header #vocation {
 }
 
 #navbar .thumbnail img {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
 }
 
 @media only screen and (min-width: 768px) {
   #navbar .thumbnail img {
-    width: 100%;
+    width: 50%;
+    height: auto;
+    margin-top: 40%;
   }
 }
 

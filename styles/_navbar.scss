@@ -4,6 +4,7 @@
     bottom: 3vh;
     height: 10vh;
     z-index: 5;
+    width: 100vw;
     cursor: pointer;
     
 
@@ -33,10 +34,12 @@
             width: 50%;
         }
         img{
-            width: 30%;
-            height: 30%;
+            width: 50%;
+            height: 50%;
             @media only screen and (min-width: 768px){
-                width: 100%;
+                width: 50%;
+                height: auto;
+                margin-top: 40%;
             }
         }
         span{
