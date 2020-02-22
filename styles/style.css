@@ -916,7 +916,6 @@ header #vocation {
 
 #work #card-container #card-5 {
   background-image: url("../images/portfolio.jpg");
-  background-size: 100% 80%;
 }
 
 @media only screen and (min-width: 768px) {
