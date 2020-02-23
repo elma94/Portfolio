@@ -15,7 +15,6 @@
         text-transform: uppercase;
         background-color: $color-blue;
         padding: 0.7%;
-        //border-radius: 15px;
         cursor: pointer;
         @media only screen and (min-width: 768px){
             margin-left: 15%;
@@ -33,7 +32,6 @@
     background-color: rgba(25, 25, 51, 0.575);
     border: 1.5px solid $color-blue;
     font-weight: bold;
-   //border-radius: 15px;
     padding: 0.7%;
     cursor: pointer;
 }

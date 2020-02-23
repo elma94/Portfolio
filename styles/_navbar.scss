@@ -1,10 +1,13 @@
 #navbar{
     @include flexCentered(row);
     position: absolute;
-    bottom: 3vh;
+    bottom: 0;
+    margin-bottom: 4vh;
     height: 10vh;
     z-index: 5;
-    width: 100vw;
+    left: 5vw;
+    right:5vw;
+    width: auto;
     cursor: pointer;
     
 
@@ -24,7 +27,7 @@
         order: 1;
     }
     .thumbnail{
-        width: 25%;
+        width: 25vw;
         @include flexCentered(column);
         align-self: flex-end;
         &:active{
@@ -34,8 +37,8 @@
             width: 50%;
         }
         img{
-            width: 50%;
-            height: 50%;
+            width: 10vw;
+            height: auto;
             @media only screen and (min-width: 768px){
                 width: 50%;
                 height: auto;

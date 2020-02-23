@@ -1,12 +1,10 @@
 
 #about{
-    height: 80vh;
-    position: relative;
+    height: 76vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    bottom: 5vh;
     font-size: 0.8em;
 
     @media only screen and (min-width: 768px){

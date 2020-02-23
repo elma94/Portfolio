@@ -12,6 +12,7 @@ html, body {
   background-size: cover;
   color: #ffffff;
   background-position-y: -10px;
+  font-size: 100%;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -115,7 +116,7 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 80%;
+  height: 73vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,10 +124,13 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 3vh;
+  padding: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -143,8 +147,6 @@ header #vocation {
 }
 
 #home-heading {
-  position: relative;
-  margin-left: 7%;
   color: #e3e2f7;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -155,19 +157,8 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-}
-
-#home-heading h1 {
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  #home-heading h1 {
-    text-shadow: -6px 5px 3px rgba(28, 8, 25, 0.45);
-  }
+  text-shadow: -6px 5px 3px rgba(28, 8, 25, 0.45);
+  padding: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -186,7 +177,10 @@ header #vocation {
 }
 
 #home-heading span {
-  font-size: 3.18em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.5em;
   height: 100%;
 }
 
@@ -205,7 +199,8 @@ header #vocation {
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: "Gayathri", sans-serif;
-  padding-top: 5%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -215,23 +210,18 @@ header #vocation {
 }
 
 #home-subheading span {
-  margin-top: 2%;
-  margin-right: 5%;
-  margin-left: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
-  font-size: 1.6em;
+  font-size: 1.7em;
 }
 
 #home-subheading #slash {
-  width: 25%;
-  margin-left: 7%;
+  width: 30vw;
+  margin-right: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -242,7 +232,7 @@ header #vocation {
 }
 
 #cta {
-  height: 5vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +276,7 @@ header #vocation {
 }
 
 #cta #button {
-  width: 80%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,8 +298,8 @@ header #vocation {
   background-color: #d310fa;
   padding: 0.7%;
   cursor: pointer;
-  margin-bottom: 5%;
-  padding: 3%;
+  margin-bottom: 3vh;
+  min-height: 5vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -333,6 +323,8 @@ header #vocation {
 
 #cta #button2 {
   letter-spacing: 0.1em;
+  min-height: 5vh;
+  margin-bottom: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,14 +340,13 @@ header #vocation {
           align-items: center;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
-  width: 80%;
+  width: 100%;
   font-size: 0.9em;
   background-color: rgba(25, 25, 51, 0.575);
   border: 1.5px solid #d310fa;
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
-  padding: 3%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -384,10 +375,13 @@ header #vocation {
           align-items: center;
   flex-direction: row;
   position: absolute;
-  bottom: 3vh;
+  bottom: 0;
+  margin-bottom: 4vh;
   height: 10vh;
   z-index: 5;
-  width: 100vw;
+  left: 5vw;
+  right: 5vw;
+  width: auto;
   cursor: pointer;
 }
 
@@ -422,7 +416,7 @@ header #vocation {
 }
 
 #navbar .thumbnail {
-  width: 25%;
+  width: 25vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,8 +448,8 @@ header #vocation {
 }
 
 #navbar .thumbnail img {
-  width: 50%;
-  height: 50%;
+  width: 10vw;
+  height: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -480,8 +474,7 @@ header #vocation {
 }
 
 #about {
-  height: 80vh;
-  position: relative;
+  height: 76vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,7 +486,6 @@ header #vocation {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  bottom: 5vh;
   font-size: 0.8em;
 }
 

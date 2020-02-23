@@ -65,7 +65,7 @@ var up=0;
 
    function openHome(){
         $("#home").slideDown(1000);
-        $("#about").slideDown(1000);
+        $("#about").slideDown(1000).css({"display": "none"});
         $("#work").hide();
         $("#contact").hide();
         $("#header, #name, #vocation").show();
@@ -75,19 +75,16 @@ var up=0;
 // A B O U T  S E C T I O N
 
 
+    // function openAbout(){
+        
+        
+    // } // open about section function
+
     function openAbout(){
         $("#home").slideUp(1000);
         $("#about").slideDown(1000);
         $("#work").slideUp(1000);
         $("#contact").slideUp(1000);
-        $("#name").hide();
-        $("#vocation").hide();
-       // $("#logo").css({"margin-left": "45vw"});
-        
-    } // open about section function
-
-    function about(){
-
         $("#name").hide();
         $("#vocation").hide();
 
@@ -101,7 +98,7 @@ var up=0;
 
     $("#about_btn").on("click", function(){
         openAbout();
-        about();
+        // about();
     }); //about onclick function
 
     $("#about-cta").on("click", function(){
