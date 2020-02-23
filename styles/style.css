@@ -376,6 +376,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: absolute;
   bottom: 0;
   height: 10%;

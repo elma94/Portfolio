@@ -1,5 +1,6 @@
 #navbar{
     @include flexCentered(row);
+    flex-shrink: 0;
     position: absolute;
     bottom: 0;
     height: 10%;
