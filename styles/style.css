@@ -120,7 +120,7 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 70%;
+  max-height: 70%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
