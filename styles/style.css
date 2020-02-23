@@ -37,6 +37,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   top: 0;
   padding-top: 5%;
   width: 100%;
@@ -117,7 +119,7 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 65%;
+  height: 70%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +163,8 @@ header #vocation {
           flex-direction: column;
   text-shadow: -6px 5px 3px rgba(28, 8, 25, 0.45);
   padding: 1px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -201,8 +205,10 @@ header #vocation {
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: "Gayathri", sans-serif;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -250,6 +256,8 @@ header #vocation {
           align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-top: 15%;
   margin-bottom: 5%;
 }
@@ -294,6 +302,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 1em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -341,6 +351,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   width: 100%;
   font-size: 0.9em;
@@ -378,6 +390,7 @@ header #vocation {
   flex-direction: row;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  flex-shrink: 0;
   position: absolute;
   bottom: 0;
   height: 10%;
@@ -436,6 +449,8 @@ header #vocation {
           align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -682,6 +697,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 0.9em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -730,6 +747,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   width: auto;
   font-size: 0.9em;
@@ -959,6 +978,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -998,6 +1019,8 @@ header #vocation {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   width: 50%;
   font-size: 0.7em;
@@ -1144,6 +1167,8 @@ aside #arrow img {
       -ms-flex-align: center;
           align-items: center;
   flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 0.9em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
