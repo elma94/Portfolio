@@ -116,7 +116,7 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 75%;
+  max-height: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
