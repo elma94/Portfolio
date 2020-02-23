@@ -2,7 +2,7 @@
     @include flexCentered(row);
     position: absolute;
     bottom: 0;
-    height: 10vh;
+    height: 15%;
     z-index: 5;
     left: 5vw;
     right:5vw;
@@ -28,7 +28,7 @@
     .thumbnail{
         width: 25vw;
         @include flexCentered(column);
-        align-self: flex-end;
+        align-self: center;
         &:active{
             filter: brightness(150%);
         }
