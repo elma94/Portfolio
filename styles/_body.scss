@@ -4,6 +4,7 @@ html, body{
     height: 100%;
     width: auto;
     overflow: hidden;
+    position: relative;
     box-sizing: border-box;
     background-image: url("../images/background.jpg");
     color: $color-white;
