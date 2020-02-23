@@ -1,12 +1,12 @@
 #home{
     position: relative;
-    max-height: 75%;
+    height: 65%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 10vw;
-   margin-right: 10vw;
-   padding: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
 
    @media only screen and (min-width: 768px){
        height: 55vh;
