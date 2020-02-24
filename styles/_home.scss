@@ -87,6 +87,7 @@
 #cta{
     height: 10vh;
     @include flexCentered(column);
+    flex-shrink: 0;
     margin-top: 15%;
     margin-bottom: 5%;
 
