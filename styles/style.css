@@ -230,11 +230,11 @@ header #vocation {
 }
 
 #home-subheading #slash {
-  width: 30vw;
-  margin-right: 5vw;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 4%;
 }
 
 @media only screen and (min-width: 768px) {
