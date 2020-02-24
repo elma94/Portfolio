@@ -295,7 +295,7 @@ var up=0;
         } else if(window.matchMedia('(min-width: 768px)').matches){
     
             $("#card-2").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)"});
+                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1)", "filter": "brightness(100%)"});
                 $("#card-1").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
                 $("#card-3").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
                 $("#card-4").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
