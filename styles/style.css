@@ -399,7 +399,7 @@ header #vocation {
   bottom: 0;
   height: 10%;
   margin-bottom: 5%;
-  padding-top: 5%;
+  margin-top: 5%;
   z-index: 5;
   left: 5vw;
   right: 5vw;
@@ -425,7 +425,7 @@ header #vocation {
     width: 10%;
     height: 100%;
     padding-right: 5%;
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
