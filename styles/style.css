@@ -12,7 +12,7 @@ html, body {
   background-image: url("../images/background.jpg");
   color: #ffffff;
   background-position-y: -10px;
-  font-size: 100%;
+  font-size: calc(12px + .4vw);
 }
 
 @media only screen and (min-width: 1400px) {
@@ -121,6 +121,7 @@ header #vocation {
 #home {
   position: relative;
   max-height: 70%;
+  top: 10%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,6 +495,8 @@ header #vocation {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-size: 0.8em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
