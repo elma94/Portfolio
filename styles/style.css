@@ -790,6 +790,8 @@ header #vocation {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -811,6 +813,8 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1134,7 +1138,7 @@ aside #arrow img {
 }
 
 #contact #contact-form input[type=text], #contact #contact-form input[type=email] {
-  background-color: black;
+  background: transparent;
   border: none;
   border-bottom: 2px solid #7e6e7e;
   padding-top: 5%;
