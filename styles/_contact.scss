@@ -6,7 +6,7 @@
     
     @media only screen and (min-width: 768px){
         height: 50vh;
-        top: 10vh;
+        top: 5vh;
         left: 20vw;
         right: 20vw;
         width: 60vw;
@@ -22,11 +22,12 @@
         
         @media only screen and (min-width: 768px){
             max-width: 40%;
+            padding: 1%;
             justify-content: flex-start;
 
         }
         input[type=text], input[type=email]{
-            background-color: transparent;
+            background-color: black;
             border: none;
             border-bottom: 2px solid rgb(126, 110, 126);
             padding-top: 5%;
@@ -43,8 +44,9 @@
         }
         input:focus {
             outline: none;
+            background-color: black;
           }
-          
+
         textarea{
             background-color: transparent;
             border: none;
@@ -86,7 +88,7 @@
         align-content: center;
         font-weight: 100;
         font-family: $font-secondary;
-        color: white;
+        color: rgba(255, 255, 255, 0.39);
         @media only screen and (min-width: 768px){
             padding-top: 0;
             margin-top: -15vh;

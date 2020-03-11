@@ -49,6 +49,7 @@ var up=0;
        
     }); // keyup function
 
+    $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
 
     $("#home_btn, #logo").on("click", function(){
         openHome();   
@@ -69,6 +70,10 @@ var up=0;
         $("#work").hide();
         $("#contact").hide();
         $("#header, #name, #vocation").show();
+        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
+        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
     } // open home section function
 
 
@@ -87,6 +92,10 @@ var up=0;
         $("#contact").slideUp(1000);
         $("#name").hide();
         $("#vocation").hide();
+        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#about_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
 
         if (window.matchMedia('(max-width: 768px)').matches){
             $("#about").css({"background-image": "url('images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
@@ -116,6 +125,10 @@ var up=0;
         $("#contact").slideUp(1000);
         $("#work").slideDown(1000);
         $("#header, #name, #vocation").show();
+        $("#work_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
+        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
     } // open work section function
 
     function work(){
@@ -350,6 +363,10 @@ var up=0;
         $("#about").slideUp(1000);
         $("#work").slideUp(1000);
         $("#contact").slideDown(1000);
+        $("#contact_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
+        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
     } // open contact section
     
     $("#contact_btn").on("click", function (){
@@ -358,6 +375,7 @@ var up=0;
 
 
 // FORM VALIDATION 
+
 
 $("form[name='frmContact']").validate({
     rules: {
@@ -382,6 +400,5 @@ $("form[name='frmContact']").validate({
       form.submit();
     }
   });
-
 
 }) // document ready function
