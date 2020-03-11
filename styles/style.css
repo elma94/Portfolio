@@ -17,8 +17,8 @@ html, body {
 
 @media only screen and (min-width: 768px) {
   html, body {
-    background-size: 100% 120%;
-    background-position-y: -60px;
+    background-size: 100% 130%;
+    background-position-y: -100px;
     background-position-x: 30px;
     font-size: 1.1em;
   }
@@ -90,6 +90,7 @@ header #logo {
   -ms-flex-item-align: center;
       align-self: center;
   z-index: 6;
+  cursor: pointer;
 }
 
 header #logo img {
@@ -1095,9 +1096,9 @@ aside #arrow img {
 @media only screen and (min-width: 768px) {
   #contact {
     height: 50vh;
+    top: 10vh;
     left: 20vw;
     right: 20vw;
-    top: 10vh;
     width: 60vw;
   }
 }
@@ -1131,7 +1132,7 @@ aside #arrow img {
 #contact #contact-form input[type=text], #contact #contact-form input[type=email] {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #310080;
+  border-bottom: 2px solid #7e6e7e;
   padding-top: 5%;
   color: white;
   font-family: "Gayathri", sans-serif;
@@ -1146,10 +1147,14 @@ aside #arrow img {
   }
 }
 
+#contact #contact-form input:focus {
+  outline: none;
+}
+
 #contact #contact-form textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #310080;
+  border-bottom: 2px solid #7e6e7e;
   padding-top: 5%;
   color: white;
   font-family: "Gayathri", sans-serif;
@@ -1227,7 +1232,7 @@ aside #arrow img {
       align-content: center;
   font-weight: 100;
   font-family: "Gayathri", sans-serif;
-  color: rgba(255, 255, 255, 0.562);
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1247,8 +1252,7 @@ aside #arrow img {
 @media only screen and (min-width: 768px) {
   #contact img {
     left: 30vw;
-    top: -5vh;
-    border-top: 2px solid #570080;
+    width: 30vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

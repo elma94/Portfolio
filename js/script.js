@@ -30,7 +30,7 @@ var up=0;
             down++;
             if ((down == 1)&& (up == 0)){
                 $("#home").slideUp(1000);
-                about();
+                openAbout();
             } else if ((down == 2) && (up == 0)){
                 work();
             } else if ((down == 3)&& (up == 0)){
@@ -355,6 +355,33 @@ var up=0;
     $("#contact_btn").on("click", function (){
         openContact();
     }) // contact onclick function
+
+
+// FORM VALIDATION 
+
+$("form[name='frmContact']").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      message: {
+        required: true,
+        minlength: 5,
+        maxlength: 200,
+        lettersonly: true
+      },
+    },
+    messages: {
+      name: "Please enter your firstname",
+      email: "Please enter a valid email address",
+      message: {required: "Please enter your message"}
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
 
 
 }) // document ready function
