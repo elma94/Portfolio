@@ -777,7 +777,7 @@ header #vocation {
 }
 
 #work {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,6 +794,7 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #work {
     width: 80vw;
+    height: 70vh;
     margin-left: 20vw;
   }
 }
