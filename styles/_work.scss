@@ -1,7 +1,7 @@
 #work{
     height: 50vh;
     width: 100%;
-    margin-bottom: 10vh;
+    //margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -10,6 +10,7 @@
         width: 80vw;
         height: 70vh;
         margin-left: 20vw;
+        margin-bottom: 10vh;
     }
     #card-container{
         height: 60vh;

@@ -786,7 +786,6 @@ header #vocation {
 #work {
   height: 50vh;
   width: 100%;
-  margin-bottom: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,6 +805,7 @@ header #vocation {
     width: 80vw;
     height: 70vh;
     margin-left: 20vw;
+    margin-bottom: 10vh;
   }
 }
 
