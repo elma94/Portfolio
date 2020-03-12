@@ -1,7 +1,7 @@
 
 #about{
     height: 70vh;
-    top: 0;
+    top: 0vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -11,15 +11,15 @@
 
     @media only screen and (min-width: 768px){
         position: relative;
-        height: 100%;
-        bottom: 20vh;
-        width: 100%;
-        padding-top: 5%;
+        height: 40vh;
+        width: 100vw;
+        top: 0vh;
         justify-content: flex-start;
         align-self: center;
         left: 45vw;
         background-size: cover;
         z-index: 2;
+        font-size:0.8em;
         
     }
 
@@ -30,8 +30,8 @@
             width: 25vw;
             height: 60vh;
             position: absolute;
+            top: 5vh;
             left: -25vw;
-            top: 22.5vh;
             z-index: 1;
         }
 
@@ -42,13 +42,13 @@
         display: none;
         @media only screen and (min-width: 768px){
             display: block;
+            top: 0;
             width: 55vw;
             background-color: black;
-            height: 70vh;
+            height: 60vh;
             border-top: 2px solid rgb(126, 110, 126);
             position: absolute; 
             left: -20vw; 
-            top: 15vh;
             z-index: -1;
             margin-right: 1vw;
         }
@@ -69,8 +69,9 @@
 
         @media only screen and (min-width: 768px){
             width: 40%;
-           height: 80%;
+           height: 60vh;
            justify-content: center;
+           padding-top: 5vh;
            margin: 0;
         }
         
@@ -153,8 +154,8 @@
             @media only screen and (min-width: 768px){
                 margin-left: 0;
                 display: flex;
-                min-width: 50%;
-                min-height: 5%;
+                min-width: 20vw;
+                min-height: 7%;
                 margin-top: 0;
                 margin-bottom: 2%;
                
@@ -165,8 +166,8 @@
             min-height: 15%;
             @include secondaryButton(auto, 0.9em);
             @media only screen and (min-width: 768px){
-                min-height: 5%;
-                width: 50%;
+                min-height: 7%;
+                width: 20vw;
             }
         }
 

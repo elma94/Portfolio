@@ -316,6 +316,7 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
+  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
   margin-bottom: 3vh;
@@ -489,7 +490,7 @@ header #vocation {
 
 #about {
   height: 70vh;
-  top: 0;
+  top: 0vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,10 +510,9 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #about {
     position: relative;
-    height: 100%;
-    bottom: 20vh;
-    width: 100%;
-    padding-top: 5%;
+    height: 40vh;
+    width: 100vw;
+    top: 0vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -522,6 +522,7 @@ header #vocation {
     left: 45vw;
     background-size: cover;
     z-index: 2;
+    font-size: 0.8em;
   }
 }
 
@@ -535,8 +536,8 @@ header #vocation {
     width: 25vw;
     height: 60vh;
     position: absolute;
+    top: 5vh;
     left: -25vw;
-    top: 22.5vh;
     z-index: 1;
   }
 }
@@ -548,13 +549,13 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #about #background-about {
     display: block;
+    top: 0;
     width: 55vw;
     background-color: black;
-    height: 70vh;
+    height: 60vh;
     border-top: 2px solid #7e6e7e;
     position: absolute;
     left: -20vw;
-    top: 15vh;
     z-index: -1;
     margin-right: 1vw;
   }
@@ -579,10 +580,11 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #about #about-heading {
     width: 40%;
-    height: 80%;
+    height: 60vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 5vh;
     margin: 0;
   }
 }
@@ -714,6 +716,7 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
+  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
   min-height: 15%;
@@ -735,8 +738,8 @@ header #vocation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 50%;
-    min-height: 5%;
+    min-width: 20vw;
+    min-height: 7%;
     margin-top: 0;
     margin-bottom: 2%;
   }
@@ -772,8 +775,8 @@ header #vocation {
 
 @media only screen and (min-width: 768px) {
   #about #about-heading #cv {
-    min-height: 5%;
-    width: 50%;
+    min-height: 7%;
+    width: 20vw;
   }
 }
 
@@ -1002,6 +1005,7 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
+  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
 }
@@ -1197,6 +1201,7 @@ aside #arrow img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
+  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
   color: white;
