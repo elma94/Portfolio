@@ -184,7 +184,7 @@ header #vocation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 5% 0 0 0;
     padding: 0;
     width: 30vw;
