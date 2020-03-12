@@ -98,7 +98,8 @@ var up=0;
         $("#about_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
 
         if (window.matchMedia('(max-width: 768px)').matches){
-            $("#about").css({"background-image": "url('images/about_me_photo.jpg')", "background-size": "cover","z-index": "0"});
+            $("#about").css({"background-image": "url('images/about_me_photo.jpg')", "background-size": "cover","z-index": "0", "position": "absolute", "height": "85vh", "top": "0"});
+            $("#logo").hide();
         } else if(window.matchMedia('(min-width: 768px)').matches){
 
         }
