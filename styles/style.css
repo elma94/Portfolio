@@ -122,9 +122,9 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 75%;
+  height: 60%;
   top: 10%;
-  bottom: 25%;
+  bottom: 30%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,9 +488,9 @@ header #vocation {
 }
 
 #about {
-  height: 85%;
+  height: 70%;
   top: 0;
-  bottom: 25%;
+  bottom: 30%;
   position: relative;
   background-size: cover;
   display: -webkit-box;
@@ -561,7 +561,7 @@ header #vocation {
 }
 
 #about #about-heading {
-  height: 60%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,7 +718,7 @@ header #vocation {
   border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
-  min-height: 15%;
+  min-height: 7%;
   margin-bottom: 5%;
 }
 
@@ -745,7 +745,7 @@ header #vocation {
 }
 
 #about #about-heading #cv {
-  min-height: 15%;
+  min-height: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,10 +780,10 @@ header #vocation {
 }
 
 #work {
-  height: 75%;
+  height: 60%;
   width: 100%;
   top: 10%;
-  bottom: 25%;
+  bottom: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,9 +1103,9 @@ aside #arrow img {
   position: relative;
   background-color: black;
   font-family: "Montserrat", sans-serif;
-  height: 75%;
+  height: 60%;
   top: 10%;
-  bottom: 25%;
+  bottom: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

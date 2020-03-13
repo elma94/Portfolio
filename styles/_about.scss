@@ -1,8 +1,8 @@
 
 #about{
-    height: 85%;
+    height: 70%;
     top:0;
-    bottom: 25%;
+    bottom: 30%;
     position: relative;
     background-size: cover;
     display: flex;
@@ -61,7 +61,7 @@
   
     
     #about-heading{
-        height: 60%;
+        height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -151,7 +151,7 @@
         }
         #about-cta{
             @include primaryButton(auto, 0.9em);
-            min-height: 15%;
+            min-height: 7%;
             margin-bottom: 5%;
             @media only screen and (min-width: 768px){
                 margin-left: 0;
@@ -165,7 +165,7 @@
         }
 
         #cv{
-            min-height: 15%;
+            min-height: 7%;
             @include secondaryButton(auto, 0.9em);
             @media only screen and (min-width: 768px){
                 min-height: 7%;
