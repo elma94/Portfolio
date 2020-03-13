@@ -3,6 +3,7 @@
     height: 70%;
     bottom: 30%;
     position: relative;
+    top: 0%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
     #about-heading{
         height: 70%;
         display: flex;
+        position: relative;
         flex-direction: column;
         justify-content: flex-end;
         margin-left: 5%;
@@ -152,6 +154,7 @@
             @include primaryButton(auto, 0.9em);
             min-height: 7%;
             margin-bottom: 5%;
+            position: relative;
             @media only screen and (min-width: 768px){
                 margin-left: 0;
                 display: flex;

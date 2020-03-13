@@ -133,6 +133,9 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding-left: 10%;
@@ -491,6 +494,7 @@ header #vocation {
   height: 70%;
   bottom: 30%;
   position: relative;
+  top: 0%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,6 +568,7 @@ header #vocation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -719,6 +724,7 @@ header #vocation {
   cursor: pointer;
   min-height: 7%;
   margin-bottom: 5%;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
