@@ -1,20 +1,30 @@
-$("#home, #about, #work, #contact, #sidebar, #sidebar").hide();
-
-
 setTimeout(function(){ 
-    $("#home, #about, #work, #contact, #sidebar, #sidebar").hide();
-    $("body").css({"background-color": "black"});
-    $("#header").css({"top": "50%", "left": "50%"});
-}, 4000);
+    $("#navbar, #home, #about, #work, #contact, #sidebar, #header").hide();
+    $("body, html").css({"background-image": "none", "background-color": "black"});
+    $("#header").css({"position": "absolute", "top": "35%", "left": "15%"});
+    $("#header").fadeIn(2000);
+});
 
 $("document").ready(function(){
+    
+    setTimeout(function(){ 
+        $("#header").animate({"position": "absolute", "top": "0%", "left": "0%"});
+        $("#navbar, #home, #about, #work, #contact, #sidebar, #header").fadeIn(2000);
+        $("#home").css({"top": "20vh"});
+        $("body").fadeIn(2000, function(){
+            $(this).css({"background-image": "url('images/background.jpg')"});
+        })
+    }, 4000);
 
     // S I D E B A R
 
 if (window.matchMedia('(max-width: 768px)').matches){
     $("aside").hide();
 } else if(window.matchMedia('(min-width: 768px)').matches){
-    $("aside").show();
+    setTimeout(function(){ 
+        
+        $("#sidebar").show();
+    }, 6000);
 }
 
 // H O M E  S C R E E N
