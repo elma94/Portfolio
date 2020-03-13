@@ -122,9 +122,9 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 80%;
+  height: 75%;
   top: 10%;
-  bottom: 20%;
+  bottom: 25%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,9 +488,9 @@ header #vocation {
 }
 
 #about {
-  height: 80%;
+  height: 75%;
   top: 10%;
-  bottom: 20%;
+  bottom: 25%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,10 +779,10 @@ header #vocation {
 }
 
 #work {
-  height: 80%;
+  height: 75%;
   width: 100%;
   top: 10%;
-  bottom: 20%;
+  bottom: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1102,9 +1102,14 @@ aside #arrow img {
   position: relative;
   background-color: black;
   font-family: "Montserrat", sans-serif;
-  height: 80%;
+  height: 75%;
   top: 10%;
-  bottom: 20%;
+  bottom: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1132,6 +1137,8 @@ aside #arrow img {
   margin-right: 5%;
   margin-left: 5%;
   height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1247,6 +1254,8 @@ aside #arrow img {
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-weight: 100;
   font-family: "Gayathri", sans-serif;
   color: rgba(255, 255, 255, 0.39);
