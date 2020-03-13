@@ -124,7 +124,8 @@ header #vocation {
   position: relative;
   height: 55%;
   top: 10%;
-  bottom: 35%;
+  bottom: 30%;
+  margin-bottom: 5%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +490,6 @@ header #vocation {
 
 #about {
   height: 70%;
-  top: 0;
   bottom: 30%;
   position: relative;
   background-size: cover;
@@ -561,7 +561,7 @@ header #vocation {
 }
 
 #about #about-heading {
-  height: 50%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
