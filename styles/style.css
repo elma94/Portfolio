@@ -122,8 +122,9 @@ header #vocation {
 
 #home {
   position: relative;
-  max-height: 60%;
-  top: 10%;
+  height: 100%;
+  top: 10vh;
+  bottom: 15vh;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,7 +491,9 @@ header #vocation {
 }
 
 #about {
-  height: auto;
+  height: 100%;
+  top: 10vh;
+  bottom: 15vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
