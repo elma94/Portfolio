@@ -96,7 +96,7 @@
         #location{
             font-size: 1.2em;
             font-family: $font-secondary;
-            padding-top: 4%;
+            padding-top: 2%;
             @media only screen and (min-width: 768px){
                 padding-top: 2vh;
             }
@@ -129,7 +129,7 @@
             font-family: $font-secondary;
             font-size: 1.1em;
             display: flex;
-            padding-top: 5%;
+            padding-top: 2%;
             line-height: 1.5em;
             flex-direction: column;
             margin-bottom: 5%;
@@ -154,7 +154,7 @@
         #about-cta{
             @include primaryButton(auto, 0.9em);
             min-height: 7%;
-            margin-bottom: 5%;
+            margin-bottom: 1%;
             position: relative;
             @media only screen and (min-width: 768px){
                 margin-left: 0;
