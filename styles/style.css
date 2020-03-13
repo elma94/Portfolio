@@ -494,7 +494,7 @@ header #vocation {
   height: 70%;
   bottom: 30%;
   position: relative;
-  top: 0%;
+  top: 0;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +503,9 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 1em;
   -ms-flex-negative: 0;
       flex-shrink: 0;
