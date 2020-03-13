@@ -567,7 +567,6 @@ header #vocation {
 }
 
 #about #about-heading {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,9 +578,10 @@ header #vocation {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 20%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -614,7 +614,7 @@ header #vocation {
 #about #about-heading #location {
   font-size: 1.2em;
   font-family: "Gayathri", sans-serif;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -626,7 +626,7 @@ header #vocation {
 #about #about-heading #skills {
   font-family: "Gayathri", sans-serif;
   font-size: 0.65em;
-  padding-top: 2%;
+  padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,13 +665,15 @@ header #vocation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2%;
+  padding-top: 1%;
   line-height: 1.5em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -701,6 +703,9 @@ header #vocation {
 }
 
 #about #about-heading #about-cta {
+  position: relative;
+  min-height: 7%;
+  margin-bottom: 2%;
   width: auto;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
@@ -726,9 +731,6 @@ header #vocation {
   border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
-  min-height: 7%;
-  margin-bottom: 2%;
-  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -737,6 +739,48 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #about #about-heading #about-cta {
+    position: absolute;
+    margin-right: 1%;
+    min-height: 15%;
+    width: 48%;
+    font-family: "Montserrat", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-direction: row;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: #d310fa;
+    border: 1.5px solid #d310fa;
+    padding: 0.7%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 768px) {
+  #about #about-heading #about-cta {
+    margin-left: 15%;
+    width: 12%;
+    padding: 0.7%;
+    font-size: 0.8em;
   }
 }
 
@@ -755,6 +799,7 @@ header #vocation {
 
 #about #about-heading #cv {
   min-height: 7%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,6 +824,39 @@ header #vocation {
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  #about #about-heading #cv {
+    position: relative;
+    float: right;
+    margin-left: 52.5%;
+    min-height: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-direction: row;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-family: "Montserrat", sans-serif;
+    width: 48%;
+    font-size: 0.8em;
+    background-color: rgba(25, 25, 51, 0.575);
+    border: 1.5px solid #d310fa;
+    font-weight: bold;
+    padding: 0.7%;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 768px) {

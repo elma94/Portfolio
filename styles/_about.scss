@@ -62,14 +62,14 @@
   
     
     #about-heading{
-        height: 100%;
+        
         display: flex;
         position: relative;
         flex-direction: column;
         justify-content: flex-end;
+        flex-shrink: 0;
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 20%;
 
         @media only screen and (min-width: 768px){
             width: 40%;
@@ -96,7 +96,7 @@
         #location{
             font-size: 1.2em;
             font-family: $font-secondary;
-            padding-top: 2%;
+            padding-top: 1%;
             @media only screen and (min-width: 768px){
                 padding-top: 2vh;
             }
@@ -104,7 +104,7 @@
         #skills{
             font-family: $font-secondary;
             font-size: 0.65em;
-            padding-top: 2%;
+            padding-top: 1%;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -129,10 +129,11 @@
             font-family: $font-secondary;
             font-size: 1.1em;
             display: flex;
-            padding-top: 2%;
+            padding-top: 1%;
             line-height: 1.5em;
             flex-direction: column;
-            margin-bottom: 5%;
+            margin-bottom: 1%;
+            flex-shrink: 0;
             @media only screen and (min-width: 768px){
                 padding-top: 2vh;
             }
@@ -152,10 +153,17 @@
             
         }
         #about-cta{
-            @include primaryButton(auto, 0.9em);
+            position: relative;
             min-height: 7%;
             margin-bottom: 2%;
-            position: relative;
+            @include primaryButton(auto, 0.9em);
+            @media only screen and (max-width: 375px){
+                position:absolute;
+                margin-right: 1%;
+                min-height: 15%;
+                @include primaryButton(48%, 0.8em);
+            }
+
             @media only screen and (min-width: 768px){
                 margin-left: 0;
                 display: flex;
@@ -163,16 +171,24 @@
                 min-height: 7%;
                 margin-top: 0;
                 margin-bottom: 2%;
-               
             }
         }
 
         #cv{
             min-height: 7%;
+            position: relative;
             @include secondaryButton(auto, 0.9em);
+            @media only screen and (max-width: 375px){
+                position: relative;
+                float: right;
+                margin-left: 52.5%;
+                min-height: 15%;
+                @include secondaryButton(48%, 0.8em);
+            }
             @media only screen and (min-width: 768px){
                 min-height: 7%;
                 width: 20vw;
+                
             }
         }
 
