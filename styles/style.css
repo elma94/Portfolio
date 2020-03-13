@@ -560,7 +560,7 @@ header #vocation {
 }
 
 #about #about-heading {
-  height: 40%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1119,6 +1119,7 @@ aside #arrow img {
     left: 20vw;
     right: 20vw;
     width: 60vw;
+    bottom: 0;
   }
 }
 
