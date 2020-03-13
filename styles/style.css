@@ -490,9 +490,8 @@ header #vocation {
 }
 
 #about {
-  height: 60vh;
+  height: auto;
   top: 0vh;
-  bottom: 30vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
