@@ -19,10 +19,9 @@ $("document").ready(function(){
     // S I D E B A R
 
 if (window.matchMedia('(max-width: 768px)').matches){
-    $("aside").hide();
+    $("#sidebar").hide();
 } else if(window.matchMedia('(min-width: 768px)').matches){
     setTimeout(function(){ 
-        
         $("#sidebar").show();
     }, 6000);
 }
