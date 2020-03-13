@@ -1,4 +1,11 @@
+$("#home, #about, #work, #contact, #sidebar, #sidebar").hide();
 
+
+setTimeout(function(){ 
+    $("#home, #about, #work, #contact, #sidebar, #sidebar").hide();
+    $("body").css({"background-color": "black"});
+    $("#header").css({"top": "50%", "left": "50%"});
+}, 4000);
 
 $("document").ready(function(){
 
@@ -51,6 +58,8 @@ var up=0;
 
     $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
     $("#about, #work, #contact").hide();
+
+
 
     $("#home_btn, #logo").on("click", function(){
         openHome();   
