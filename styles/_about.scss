@@ -1,7 +1,7 @@
 
 #about{
-    height: 80%;
-    bottom: 20%;
+    height: 85%;
+    bottom: 15%;
     position: relative;
     top: 0;
     background-size: cover;
@@ -154,7 +154,7 @@
         #about-cta{
             @include primaryButton(auto, 0.9em);
             min-height: 7%;
-            margin-bottom: 1%;
+            margin-bottom: 2%;
             position: relative;
             @media only screen and (min-width: 768px){
                 margin-left: 0;

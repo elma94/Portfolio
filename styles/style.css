@@ -491,8 +491,8 @@ header #vocation {
 }
 
 #about {
-  height: 80%;
-  bottom: 20%;
+  height: 85%;
+  bottom: 15%;
   position: relative;
   top: 0;
   background-size: cover;
@@ -727,7 +727,7 @@ header #vocation {
   padding: 0.7%;
   cursor: pointer;
   min-height: 7%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   position: relative;
 }
 
