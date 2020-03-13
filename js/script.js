@@ -50,6 +50,7 @@ var up=0;
     }); // keyup function
 
     $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
+    $("#about").hide();
 
     $("#home_btn, #logo").on("click", function(){
         openHome();   
