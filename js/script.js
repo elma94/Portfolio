@@ -1,30 +1,61 @@
 setTimeout(function(){ 
     $("#navbar, #home, #about, #work, #contact, #sidebar, #header").hide();
     $("body, html").css({"background-image": "none", "background-color": "black"});
-    $("#header").css({"position": "absolute", "top": "35%", "left": "15%"});
+    if (window.matchMedia('(max-width: 768px)').matches){
+        $("#header").css({"position": "absolute", "top": "45%"});
+    } else if(window.matchMedia('(min-width: 768px)').matches){
+        $("#header").css({"position": "absolute", "top": "35%", "left": "15%"});
+    }
     $("#header").fadeIn(2000);
 });
 
-$("document").ready(function(){
-    
-    setTimeout(function(){ 
-        $("#header").animate({"position": "absolute", "top": "0%", "left": "0%"});
-        $("#navbar, #home, #about, #work, #contact, #sidebar, #header").fadeIn(2000);
-        $("#home").css({"top": "20vh"});
-        $("body").fadeIn(2000, function(){
-            $(this).css({"background-image": "url('images/background.jpg')"});
-        })
-    }, 4000);
 
-    // S I D E B A R
+
+$("document").ready(function(){
+
+
+// S I D E B A R
 
 if (window.matchMedia('(max-width: 768px)').matches){
     $("#sidebar").hide();
 } else if(window.matchMedia('(min-width: 768px)').matches){
     setTimeout(function(){ 
-        $("#sidebar").show();
-    }, 6000);
+        $("#sidebar").fadeIn(2000);
+    }, 4000);
 }
+    var cookies = function(){
+        window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "rgba(25, 25, 51, 0.175);",
+                "text": "#6d5685"
+              },
+              "button": {
+                "background": "transparent",
+                "text": "##6d5685",
+                "border": "#d310fa"
+              }
+            }
+          });
+    }; // cookies consent function
+
+    setTimeout(function(){ 
+        $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10vh"});
+        $("#navbar, #home, #about, #work, #contact, #header").fadeIn(2000);
+        $("body").fadeIn(2000, function(){
+            $(this).css({"background-image": "url('images/background.jpg')"});
+        })
+        $("#home, #about, #work").css({"top": "15vh"});
+        if (window.matchMedia('(max-width: 768px)').matches){
+            $("#contact").css({"top": "15vh"});
+        } else if(window.matchMedia('(min-width: 768px)').matches){
+            $("#about").css({"top": "15vh"});
+            $("#contact").css({"top": "30vh"});
+            cookies();
+        }
+        
+    }, 4000);
+
 
 // H O M E  S C R E E N
     
@@ -86,23 +117,15 @@ var up=0;
    function openHome(){
         $("#home").slideDown(1000);
         $("#about").slideDown(1000).css({"display": "none"});
-        $("#work").hide();
-        $("#contact").hide();
+        $("#work, #contact").hide();
         $("#header, #name, #vocation").show();
-        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#contact_btn, #work_btn, #about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
         $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
-        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
     } // open home section function
 
 
 // A B O U T  S E C T I O N
 
-
-    // function openAbout(){
-        
-        
-    // } // open about section function
 
     function openAbout(){
         $("#home").slideUp(1000);
@@ -111,9 +134,7 @@ var up=0;
         $("#contact").slideUp(1000);
         $("#name").hide();
         $("#vocation").hide();
-        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#contact_btn, #work_btn, #home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
         $("#about_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
 
         if (window.matchMedia('(max-width: 768px)').matches){
@@ -140,15 +161,11 @@ var up=0;
 
     function openWork(){
         
-        $("#home").slideUp(1000);
-        $("#about").slideUp(1000);
-        $("#contact").slideUp(1000);
+        $("#home, #about, #contact").slideUp(1000);
         $("#work").slideDown(1000);
-        $("#header, #name, #vocation").show();
+        $("#name, #vocation, #logo").show();
         $("#work_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
-        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#home_btn, #about_btn, #contact_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
     } // open work section function
 
     function work(){
@@ -379,14 +396,19 @@ var up=0;
 //  C O N T A C T  S E C T I O N
 
    function openContact (){
-        $("#home").slideUp(1000);
-        $("#about").slideUp(1000);
-        $("#work").slideUp(1000);
+    $("#logo, #name, #vocation").show();
+        $("#home, #about, #work").slideUp(1000);
         $("#contact").slideDown(1000);
         $("#contact_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
-        $("#work_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
-        $("#about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        $("#work_btn, #home_btn, #about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
+        if (window.matchMedia('(max-width: 768px)').matches){
+            var icons = $("#icons");
+            $("#icons").css({"position": "absolute", "display": "flex", "flex-direction": "row", "justify-content": "center","bottom": "15%", "z-index": "10", "width": "100vw", "height": "10vh"});
+        $("#icons span:first-child").css({"height": "100%", "width": "40px", "margin-left": "-50px"});
+        $("#icons span:nth-child(2)").css({"height": "100%", "width": "40px", "margin-left": "2%"});
+            $("#contact").append(icons);
+        }
+        $("#icons").css({"display": "block !important"});
     } // open contact section
     
     $("#contact_btn").on("click", function (){

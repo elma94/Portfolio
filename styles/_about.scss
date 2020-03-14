@@ -48,7 +48,7 @@
             top: 0;
             width: 55vw;
             background-color: black;
-            height: 60vh;
+            height: 70vh;
             border-top: 2px solid rgb(126, 110, 126);
             position: absolute; 
             left: -20vw; 
@@ -132,7 +132,7 @@
             padding-top: 1%;
             line-height: 1.5em;
             flex-direction: column;
-            margin-bottom: 1%;
+            margin-bottom: 2%;
             flex-shrink: 0;
             @media only screen and (min-width: 768px){
                 padding-top: 2vh;
@@ -161,7 +161,7 @@
                 position:absolute;
                 margin-right: 1%;
                 min-height: 15%;
-                @include primaryButton(48%, 0.8em);
+                @include primaryButton(46%, 0.8em);
             }
 
             @media only screen and (min-width: 768px){
@@ -182,8 +182,8 @@
                 position: relative;
                 float: right;
                 margin-left: 52.5%;
-                min-height: 15%;
-                @include secondaryButton(48%, 0.8em);
+                height: 15%;
+                @include secondaryButton(46%, 0.8em);
             }
             @media only screen and (min-width: 768px){
                 min-height: 7%;
