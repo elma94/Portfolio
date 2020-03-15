@@ -182,7 +182,7 @@
                 position: relative;
                 float: right;
                 margin-left: 52.5%;
-                height: 15%;
+                min-height: 15%;
                 @include secondaryButton(46%, 0.8em);
             }
             @media only screen and (min-width: 768px){

@@ -831,7 +831,7 @@ header #vocation {
     position: relative;
     float: right;
     margin-left: 52.5%;
-    height: 15%;
+    min-height: 15%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -887,7 +887,6 @@ header #vocation {
     width: 80vw;
     height: 60%;
     position: relative;
-    top: 20vh;
     margin-left: 20vw;
     margin-bottom: 10vh;
   }
@@ -914,7 +913,7 @@ header #vocation {
     width: 90%;
     float: left;
     height: 50vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-right: 10vw;
     margin-bottom: 0;
   }
