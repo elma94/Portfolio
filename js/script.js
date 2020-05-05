@@ -138,8 +138,8 @@ var up=0;
         $("#about_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
 
         if (window.matchMedia('(max-width: 768px)').matches){
-            $("#about").css({"background-image": "url('images/about_me_photo.jpg')","z-index": "0", "top": "0"});
-            $("#logo").hide();
+            //$("#about").css({"background-image": "url('images/about_me_photo.jpg')","z-index": "0", "top": "0"});
+            //$("#logo").hide();
         } else if(window.matchMedia('(min-width: 768px)').matches){
 
         }

@@ -1,7 +1,7 @@
 
 #about{
-    height: 85%;
-    bottom: 15%;
+    height: 70%;
+    margin-top: 10%;
     position: relative;
     top: 0;
     background-size: cover;
@@ -10,6 +10,7 @@
     justify-content: flex-end;
     font-size: 1em;
     flex-shrink: 0;
+    background-color: black;
 
     @media only screen and (min-width: 768px){
         position: relative;
@@ -27,9 +28,18 @@
     }
 
     img{
-        display: none;
+        display: flex;
+        position: absolute;
+        top: 0;
+        height: 60%;
+        width:auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        
         @media only screen and (min-width: 768px){
             display: block;
+            margin: 0;
+            padding: 0;
             width: 25vw;
             height: 60vh;
             position: absolute;

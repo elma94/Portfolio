@@ -144,16 +144,14 @@ header #vocation {
 
 @media only screen and (min-width: 768px) {
   #home {
-    height: 50%;
+    height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding: 0;
-    margin-bottom: 35%;
+    margin-bottom: 10vh;
     width: 50vw;
+    right: 20vw;
     left: 20vw;
     top: 0vh;
   }
@@ -273,7 +271,7 @@ header #vocation {
   margin-bottom: 5%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   #cta {
     margin: 0;
     width: 70%;
@@ -292,6 +290,16 @@ header #vocation {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 10%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #cta {
+    height: 5vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -491,8 +499,8 @@ header #vocation {
 }
 
 #about {
-  height: 85%;
-  bottom: 15%;
+  height: 70%;
+  margin-top: 10%;
   position: relative;
   top: 0;
   background-size: cover;
@@ -509,6 +517,7 @@ header #vocation {
   font-size: 1em;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  background-color: black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -532,12 +541,22 @@ header #vocation {
 }
 
 #about img {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 60%;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media only screen and (min-width: 768px) {
   #about img {
     display: block;
+    margin: 0;
+    padding: 0;
     width: 25vw;
     height: 60vh;
     position: absolute;
