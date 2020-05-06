@@ -20,7 +20,7 @@
        width: 50vw;
        right: 20vw;
        left: 20vw;
-       top: 0vh;
+       top: 10vh;
        
    }
 }
@@ -39,7 +39,7 @@
 @media only screen and (min-width: 768px){
         display: flex;
         flex-direction: row;
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 5% 0 0 0;
         padding: 0;
         width: 30vw;
@@ -93,7 +93,7 @@
     margin-top: 15%;
     margin-bottom: 5%;
 
-    @media only screen and (min-width: 768px) and (max-width: 1439px){
+    @media only screen and (min-width: 768px){
         margin: 0;
         width: 70%;
         min-width: 30vw;
@@ -102,6 +102,7 @@
         align-items: center;
         justify-content: flex-start;
         height: 10%;
+        margin-top: 0;
     }
 
     @media only screen and (min-width: 1440px){

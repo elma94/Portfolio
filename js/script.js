@@ -45,12 +45,13 @@ if (window.matchMedia('(max-width: 768px)').matches){
         $("body").fadeIn(2000, function(){
             $(this).css({"background-image": "url('images/background.jpg')"});
         })
-        $("#home, #about, #work").css({"top": "10vh"});
+        $("#about, #work").css({"top": "15vh"});
         if (window.matchMedia('(max-width: 768px)').matches){
             $("#contact").css({"top": "15vh"});
         } else if(window.matchMedia('(min-width: 768px)').matches){
             $("#about").css({"top": "15vh"});
             $("#contact").css({"top": "30vh"});
+            $("#work").css({"top": "10vh"});
             cookies();
         }
         
