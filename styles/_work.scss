@@ -42,9 +42,9 @@
             box-shadow: -3px 60px 128px -36px rgba(78,43,148,1);
 
             @media only screen and (min-width: 768px){
-                min-width: 12vw;
+                min-width: 15vw;
                 max-width: 12vw;
-                min-height: 30vh;
+                min-height: 20vh;
                 margin: 5px;
             }
         
@@ -66,7 +66,7 @@
         #card-1{
             height: 90%;
             transform: translate(20vw);
-            background-image: url("../images/weatherapp.jpg");
+           // background-image: url("../images/weatherapp.jpg");
             background-size: 100% 100%;
             @media only screen and (min-width: 768px){
                 transform: none;

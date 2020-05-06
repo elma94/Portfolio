@@ -124,7 +124,7 @@ header #vocation {
 #home {
   position: relative;
   height: 70%;
-  top: 10%;
+  top: 25vh;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -961,9 +961,9 @@ header #vocation {
 
 @media only screen and (min-width: 768px) {
   #work #card-container .cards {
-    min-width: 12vw;
+    min-width: 15vw;
     max-width: 12vw;
-    min-height: 30vh;
+    min-height: 20vh;
     margin: 5px;
   }
 }
@@ -986,7 +986,6 @@ header #vocation {
   height: 90%;
   -webkit-transform: translate(20vw);
           transform: translate(20vw);
-  background-image: url("../images/weatherapp.jpg");
   background-size: 100% 100%;
 }
 
