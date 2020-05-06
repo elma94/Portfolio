@@ -1,7 +1,7 @@
 
 #about{
     height: 70%;
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
     top: 0;
     background-size: cover;
@@ -30,6 +30,7 @@
 
     img{
         display: flex;
+        align-self: center;
         position: absolute;
         top: 0;
         height: 60%;

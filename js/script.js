@@ -97,7 +97,7 @@ var up=0;
     }); // keyup function
 
     $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
-    $("#about, #work, #contact").hide();
+    $("#about, #photo, #work, #contact").hide();
 
 
 
@@ -132,6 +132,7 @@ var up=0;
         $("#about").slideDown(1000);
         $("#work").slideUp(1000);
         $("#contact").slideUp(1000);
+        $("#photo").show();
         $("#name").hide();
         $("#vocation").hide();
         $("#contact_btn, #work_btn, #home_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
