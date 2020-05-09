@@ -9,7 +9,7 @@
     position: relative;
     @media only screen and (min-width: 768px){
         width: 80vw;
-        height: 60%;
+        height: 50%;
         position: relative;
         margin-left: 20vw;
         //margin-bottom: 10vh;
@@ -25,14 +25,12 @@
         @media only screen and (min-width: 768px){
             width: 90%;
             float:left;
-            height: 50vh;
+            height: 45vh;
             margin-top: 20vh;
             margin-right: 10vw;
             margin-bottom: 0;
         }
         .cards{
-            // border-top-left-radius: 15px;
-            // border-top-right-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;

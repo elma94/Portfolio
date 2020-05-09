@@ -50,7 +50,7 @@ if (window.matchMedia('(max-width: 768px)').matches){
             $("#contact").css({"top": "15vh"});
         } else if(window.matchMedia('(min-width: 768px)').matches){
             $("#about").css({"top": "15vh"});
-            $("#contact").css({"top": "30vh"});
+            //$("#contact").css({"top": "20vh"});
             $("#work").css({"top": "10vh"});
             cookies();
         }
@@ -405,9 +405,9 @@ var up=0;
         $("#work_btn, #home_btn, #about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
         if (window.matchMedia('(max-width: 768px)').matches){
             var icons = $("#icons");
-            $("#icons").css({"position": "absolute", "display": "flex", "flex-direction": "row", "justify-content": "center","bottom": "15%", "z-index": "10", "width": "100vw", "height": "10vh"});
-        $("#icons span:first-child").css({"height": "100%", "width": "40px", "margin-left": "-50px"});
-        $("#icons span:nth-child(2)").css({"height": "100%", "width": "40px", "margin-left": "2%"});
+            $("#icons").css({"position": "absolute", "left":"40%", "display": "flex", "flex-direction": "row","top": "7%", "z-index": "10", "width": "auto", "height": "7vh", "justify-content": "center", "align-items": "center"});
+        $("#icons span:first-child").css({"height": "auto", "width": "auto", "margin-right": "30px", "margin-left": "-20px"});
+        $("#icons span:nth-child(2)").css({"height": "auto", "width": "auto", "margin-left": "10vw", "margin-right": "5px"});
             $("#contact").append(icons);
         }
         $("#icons").css({"display": "block !important"});
