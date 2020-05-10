@@ -347,45 +347,45 @@ var up=0;
     
         } else if(window.matchMedia('(min-width: 768px)').matches){
     
-            $("#card-2").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1)", "filter": "brightness(100%)"});
-                $("#card-1").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-3").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-4").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-                $("#card-5").css({"height": "70%", "transform": "translateY(-6%)", "filter": "brightness(60%)"});
-            }) // card 2 onclick 
+            $("#card-2").on("mouseenter", function(){
+                $(this).css({"height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)", "z-index": "10"});
+                $("#card-1, #card-3, #card-4, #card-5").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }).on("mouseleave", function(){
+                $(this).css({"height": "100%", "transform": "scale(1)", "filter": "brightness(60%)"});
+                $("#card-1, #card-3, #card-4, #card-5").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }); // card 2 onclick 
     
-            $("#card-3").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)"});
-                $("#card-1").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-                $("#card-2").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-4").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-5").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-            }) // card 3 onclick
+            $("#card-3").on("mouseenter", function(){
+                $(this).css({"height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)", "z-index": "10"});
+                $("#card-1, #card-2, #card-4, #card-5").css({"filter": "brightness(60%)"});
+            }).on("mouseleave", function(){
+                $(this).css({"height": "100%", "transform": "scale(1)", "filter": "brightness(60%)"});
+                $("#card-1, #card-2, #card-4, #card-5").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }); // card 3 onclick
     
-            $("#card-4").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)"});
-                $("#card-1").css({"height": "70%", "transform": "translateY(-6%)", "filter": "brightness(60%)"});
-                $("#card-2").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-                $("#card-3").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-5").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-            }) // card 4 onclick
+            $("#card-4").on("mouseenter", function(){
+                $(this).css({"height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)", "z-index": "10"});
+                $("#card-1, #card-2, #card-3, #card-5").css({"filter": "brightness(60%)"});
+            }).on("mouseleave", function(){
+                $(this).css({"height": "100%", "transform": "scale(1)", "filter": "brightness(60%)"});
+                $("#card-1, #card-2, #card-4, #card-5").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }); // card 4 onclick
     
             $("#card-5").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)"});
-                $("#card-1").css({"height": "60%", "transform": "translateY(-8%)", "filter": "brightness(60%)"});
-                $("#card-2").css({"height": "70%", "transform": "translateY(-6%)", "filter": "brightness(60%)"});
-                $("#card-3").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-                $("#card-4").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-            }) // card 5 onclick
+                $(this).css({"height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)", "z-index": "10"});
+                $("#card-1, #card-2, #card-3, #card-4").css({ "filter": "brightness(60%)"});
+            }).on("mouseleave", function(){
+                $(this).css({"height": "100%", "transform": "scale(1)", "filter": "brightness(60%)"});
+                $("#card-1, #card-3, #card-3, #card-4").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }); // card 5 onclick
     
             $("#card-1").on("mouseover", function(){
-                $(this).css({"transform": "none", "height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)"});
-                $("#card-2").css({"height": "90%", "transform": "translateY(-2%)", "filter": "brightness(60%)"});
-                $("#card-3").css({"height": "80%", "transform": "translateY(-4%)", "filter": "brightness(60%)"});
-                $("#card-4").css({"height": "70%", "transform": "translateY(-6%)", "filter": "brightness(60%)"});
-                $("#card-5").css({"height": "60%", "transform": "translateY(-8%)", "filter": "brightness(60%)"});
-            }) // card 1 onclick
+                $(this).css({"height": "100%", "transform": "scale(1.1)", "filter": "brightness(100%)", "z-index": "10"});
+                $("#card-2, #card-3, #card-4, #card-5").css({"filter": "brightness(60%)"});
+            }).on("mouseleave", function(){
+                $(this).css({"height": "100%", "transform": "scale(1)", "filter": "brightness(60%)"});
+                $("#card-2, #card-3, #card-4, #card-5").css({"transform": "scale(1)","filter": "brightness(60%)"});
+            }); // card 1 onclick
         } // if statement for work section
     } // work section function
 

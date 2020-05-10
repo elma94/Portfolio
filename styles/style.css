@@ -976,6 +976,13 @@ header #vocation {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #work #card-container .cards .card-title {
+    font-size: 0.9em;
+    height: auto;
+  }
+}
+
 #work #card-container .cards .card-desc {
   font-family: "Gayathri", sans-serif;
   padding-bottom: 10%;
@@ -990,6 +997,13 @@ header #vocation {
   background-color: rgba(11, 11, 165, 0.411);
   padding: 1vw 1vw 0vw 1vw;
   border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  #work #card-container .cards .card-desc {
+    font-size: 0.7em;
+    height: auto;
+  }
 }
 
 #work #card-container #card-1 {
@@ -1084,8 +1098,8 @@ header #vocation {
 
 @media only screen and (min-width: 768px) {
   #work .work-buttons {
-    margin: 0;
     height: auto;
+    margin-top: 5%;
   }
 }
 
@@ -1147,11 +1161,11 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #work .work-buttons .button-git {
     margin-left: 0;
-    width: 75%;
     margin-bottom: 2%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: calc(98.6% - 3px);
   }
 }
 

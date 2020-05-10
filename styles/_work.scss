@@ -51,6 +51,10 @@
                 height: 5%;
                 width: 100%;
                 text-align: center;
+                @media only screen and (min-width: 768px){
+                    font-size: 0.9em;
+                    height: auto;
+                }
             }
 
             .card-desc{
@@ -65,6 +69,10 @@
                     background-color: rgba(11, 11, 165, 0.411);
                     padding: 1vw 1vw 0vw 1vw;
                     border-radius: 15px;
+                }
+                @media only screen and (min-width: 768px){
+                    font-size: 0.7em;
+                    height: auto;
                 }
             }
             
@@ -130,8 +138,8 @@
         margin-top: 5%;
         height: 10%;
         @media only screen and (min-width: 768px){
-            margin: 0;
             height: auto;
+            margin-top: 5%
         }
         a{
             height: 100%;
@@ -150,9 +158,9 @@
             
             @media only screen and (min-width: 768px){
                 margin-left: 0;
-                width: 75%;
                 margin-bottom: 2%;
                 align-self: center;
+                width: calc(98.6% - 3px);
             }
         }
         .button-url{
