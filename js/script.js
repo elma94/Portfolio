@@ -45,9 +45,10 @@ if (window.matchMedia('(max-width: 768px)').matches){
         $("body").fadeIn(2000, function(){
             $(this).css({"background-image": "url('images/background.jpg')"});
         })
-        $("#about, #work").css({"top": "15vh"});
+        //$("#about, #work").css({"top": "15vh"});
         if (window.matchMedia('(max-width: 768px)').matches){
-            $("#contact").css({"top": "15vh"});
+            //$("#home, #work, #contact").css({"top": "15%"});
+            //$("#contact").css({"top": "15vh"});
         } else if(window.matchMedia('(min-width: 768px)').matches){
             $("#about").css({"top": "15vh"});
             //$("#contact").css({"top": "20vh"});

@@ -123,8 +123,8 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 70%;
-  top: 25vh;
+  height: 65%;
+  top: 15%;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,10 +500,9 @@ header #vocation {
 }
 
 #about {
-  height: 70%;
-  margin-top: 5%;
+  height: 65%;
   position: relative;
-  top: 0;
+  top: 15%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,9 +889,9 @@ header #vocation {
 }
 
 #work {
-  height: 70%;
+  height: 65%;
   width: 100%;
-  bottom: 30%;
+  top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,7 +952,7 @@ header #vocation {
           justify-content: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  min-width: 60vw;
+  min-width: 50vw;
   max-height: 100%;
   -webkit-box-shadow: -3px 60px 128px -36px #4e2b94;
           box-shadow: -3px 60px 128px -36px #4e2b94;
@@ -970,18 +969,20 @@ header #vocation {
 #work #card-container .cards .card-title {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.1em;
-  padding: 0% 3%;
-  font-size: 1 em;
+  padding: 5% 0%;
+  font-size: 1.5em;
+  height: 5%;
+  width: 100%;
   text-align: center;
-  justify-self: flex-end;
 }
 
 #work #card-container .cards .card-desc {
   font-family: "Gayathri", sans-serif;
-  padding: 3% 3%;
-  font-size: 0.8em;
+  padding-bottom: 10%;
+  font-size: 1em;
   text-align: center;
+  height: 5%;
+  width: 100%;
 }
 
 #work #card-container .cards .card-desc span {
@@ -1074,21 +1075,23 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  height: auto;
-  width: 100%;
-  margin: 2.5% 2.5%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 5%;
+  height: 10%;
 }
 
 @media only screen and (min-width: 768px) {
   #work .work-buttons {
     margin: 0;
+    height: auto;
   }
 }
 
 #work .work-buttons a {
   height: 100%;
-  width: 90%;
+  width: 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1104,7 +1107,7 @@ header #vocation {
 }
 
 #work .work-buttons .button-git {
-  width: 90%;
+  width: calc(98.6% - 3px);
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1129,6 +1132,7 @@ header #vocation {
   border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
+  height: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1152,6 +1156,8 @@ header #vocation {
 }
 
 #work .work-buttons .button-url {
+  height: 50%;
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,7 +1175,7 @@ header #vocation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
-  width: 75%;
+  width: calc(98.6% - 3px);
   font-size: 0.7em;
   background-color: rgba(25, 25, 51, 0.575);
   border: 1.5px solid #d310fa;
@@ -1228,8 +1234,8 @@ aside #arrow img {
 #contact {
   position: relative;
   width: 100%;
-  height: auto;
-  top: 40vh;
+  height: 65%;
+  top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
