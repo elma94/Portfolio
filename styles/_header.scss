@@ -2,9 +2,9 @@ header{
     @include flexCentered(row);
     position: absolute;
     top: 0;
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100%;
-    height: 10%;
+    height: 10vh;
     flex-shrink: 0;
     
     @media only screen and (min-width: 768px){

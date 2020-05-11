@@ -43,9 +43,9 @@ header {
       flex-shrink: 0;
   position: absolute;
   top: 0;
-  padding-top: 5%;
+  padding-top: 5vh;
   width: 100%;
-  height: 10%;
+  height: 10vh;
   flex-shrink: 0;
 }
 
@@ -123,8 +123,8 @@ header #vocation {
 
 #home {
   position: relative;
-  height: 65%;
-  top: 15%;
+  top: 15vh;
+  height: 65vh;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,12 +411,11 @@ header #vocation {
   flex-shrink: 0;
   position: absolute;
   bottom: 0;
-  height: 10%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  z-index: 5;
+  height: 10vh;
+  margin: 5vh 0;
   left: 5%;
   right: 5%;
+  z-index: 5;
   width: auto;
   cursor: pointer;
 }
@@ -440,6 +439,8 @@ header #vocation {
     height: 100%;
     padding-right: 5%;
     margin-top: 0;
+    left: 5%;
+    right: 5%;
   }
 }
 
@@ -453,7 +454,7 @@ header #vocation {
 }
 
 #navbar .thumbnail {
-  width: 25vw;
+  width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,9 +501,9 @@ header #vocation {
 }
 
 #about {
-  height: 65%;
   position: relative;
-  top: 15%;
+  top: 15vh;
+  height: 65vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,7 +821,6 @@ header #vocation {
 }
 
 #about #about-heading #cv {
-  min-height: 7%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,9 +889,9 @@ header #vocation {
 }
 
 #work {
-  height: 65%;
-  width: 100%;
-  top: 15%;
+  position: relative;
+  top: 15vh;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,7 +901,6 @@ header #vocation {
           flex-direction: column;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1093,7 +1092,7 @@ header #vocation {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 5%;
-  height: 10%;
+  height: 20%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1121,7 +1120,7 @@ header #vocation {
 }
 
 #work .work-buttons .button-git {
-  width: calc(98.6% - 3px);
+  width: 98.6%;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1247,9 +1246,8 @@ aside #arrow img {
 
 #contact {
   position: relative;
-  width: 100%;
-  height: 65%;
-  top: 15%;
+  top: 15vh;
+  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1281,7 +1279,7 @@ aside #arrow img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 100%;
+  height: auto;
   width: 90%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1362,7 +1360,7 @@ aside #arrow img {
   flex-direction: row;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-size: 0.9em;
+  font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
@@ -1374,9 +1372,8 @@ aside #arrow img {
   text-decoration: none;
   -webkit-appearance: none;
   border-radius: 0;
-  border: none;
   z-index: 2;
-  height: 6vh;
+  min-height: 5vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1384,7 +1381,7 @@ aside #arrow img {
     margin-left: 15%;
     width: 12%;
     padding: 0.7%;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }
 

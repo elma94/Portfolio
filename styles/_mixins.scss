@@ -37,3 +37,9 @@
     padding: 0.7%;
     cursor: pointer;
 }
+
+@mixin positioning(){
+    position: relative;
+    top: 15vh;
+    height: 65vh;
+}

@@ -3,12 +3,11 @@
     flex-shrink: 0;
     position: absolute;
     bottom: 0;
-    height: 10%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    z-index: 5;
+    height: 10vh;
+    margin: 5vh 0;
     left: 5%;
-    right:5%;
+    right: 5%;
+    z-index: 5;
     width: auto;
     cursor: pointer;
     
@@ -23,6 +22,8 @@
         height: 100%;
         padding-right: 5%;
         margin-top: 0;
+        left: 5%;
+        right:5%;
     }
 
     #home-btn{
@@ -30,7 +31,7 @@
         order: 1;
     }
     .thumbnail{
-        width: 25vw;
+        width: 20vw;
         @include flexCentered(column);
         align-self: center;
         &:active{

@@ -1,11 +1,9 @@
 #work{
-    height: 65%;
-    width: 100%;
-    top: 15%;
+    @include positioning();
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    position: relative;
+
     @media only screen and (min-width: 768px){
         width: 80vw;
         height: 50%;
@@ -136,7 +134,7 @@
         flex-direction: column;
         justify-content: flex-end;
         margin-top: 5%;
-        height: 10%;
+        height: 20%;
         @media only screen and (min-width: 768px){
             height: auto;
             margin-top: 5%
@@ -153,7 +151,7 @@
             
         }
         .button-git{
-            @include primaryButton(calc(98.6% - 3px), 0.7em);
+            @include primaryButton(98.6%, 0.7em);
             height: 50%;
             
             @media only screen and (min-width: 768px){

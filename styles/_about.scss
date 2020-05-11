@@ -1,8 +1,6 @@
 
 #about{
-    height: 65%;
-    position: relative;
-    top: 15%;
+    @include positioning();
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -186,7 +184,6 @@
         }
 
         #cv{
-            min-height: 7%;
             position: relative;
             @include secondaryButton(auto, 0.9em);
             @media only screen and (max-width: 375px){

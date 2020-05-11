@@ -1,8 +1,5 @@
 #contact{
-    position: relative;
-    width: 100%;
-    height: 65%;
-    top: 15%;
+    @include positioning();
     display: flex;
     flex-shrink: 0;
     font-size: 1.5em;
@@ -21,7 +18,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 100%;
+        height: auto;
         width: 90%;
         flex-shrink: 0;
         margin-top: 15vh;
@@ -78,15 +75,15 @@
 
             input[type=submit]{
                 margin-top: 2%;
-                @include primaryButton(100%, 0.9em);
+                @include primaryButton(100%, 0.7em);
                 color: white;
                 text-transform: uppercase;
                 text-decoration: none;
                 -webkit-appearance: none;
                 border-radius: 0;
-                border: none;
+                //border: none;
                 z-index: 2;
-                height: 6vh;
+                min-height: 5vh;
                 @media only screen and (min-width: 768px){
                     margin-bottom: 2%;
                     width: 40%;
