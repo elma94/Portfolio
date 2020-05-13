@@ -148,16 +148,17 @@ header #vocation {
   padding-right: 10%;
 }
 
-@media only screen and (max-width: 375px) {
-  #home {
-    max-height: 55vh;
-  }
-}
-
 @media only screen and (min-width: 1440px) {
   #home {
     top: 20vh;
     bottom: 20vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #home {
+    height: 65vh;
+    margin: 0;
   }
 }
 
@@ -190,6 +191,12 @@ header #vocation {
   padding: 1px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #home-heading {
+    font-size: 3.88em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -225,6 +232,13 @@ header #vocation {
   font-family: "Gayathri", sans-serif;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #home-subheading {
+    font-size: 1.5em;
+    padding: 2% 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -321,6 +335,7 @@ header #vocation {
   text-transform: uppercase;
   background-color: #d310fa;
   padding: 0.7%;
+  height: 6vh;
   cursor: pointer;
   margin-bottom: 3vh;
   min-height: 5vh;
@@ -332,7 +347,6 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 1em;
-    height: 6vh;
   }
 }
 
@@ -511,12 +525,6 @@ header #vocation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-color: black;
-}
-
-@media only screen and (max-width: 375px) {
-  #about {
-    max-height: 55vh;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -756,6 +764,7 @@ header #vocation {
   text-transform: uppercase;
   background-color: #d310fa;
   padding: 0.7%;
+  height: 6vh;
   cursor: pointer;
 }
 
@@ -765,7 +774,6 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.9em;
-    height: 6vh;
   }
 }
 
@@ -797,6 +805,7 @@ header #vocation {
     text-transform: uppercase;
     background-color: #d310fa;
     padding: 0.7%;
+    height: 6vh;
     cursor: pointer;
   }
 }
@@ -807,7 +816,6 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.8em;
-    height: 6vh;
   }
 }
 
@@ -906,12 +914,6 @@ header #vocation {
           flex-direction: column;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-@media only screen and (max-width: 375px) {
-  #work {
-    max-height: 55vh;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1161,6 +1163,7 @@ header #vocation {
   text-transform: uppercase;
   background-color: #d310fa;
   padding: 0.7%;
+  height: 6vh;
   cursor: pointer;
 }
 
@@ -1170,7 +1173,6 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.7em;
-    height: 6vh;
   }
 }
 
@@ -1271,12 +1273,6 @@ aside #arrow img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-size: 1.5em;
-}
-
-@media only screen and (max-width: 375px) {
-  #contact {
-    max-height: 55vh;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1395,6 +1391,7 @@ aside #arrow img {
   text-transform: uppercase;
   background-color: #d310fa;
   padding: 0.7%;
+  height: 6vh;
   cursor: pointer;
   color: white;
   text-transform: uppercase;
@@ -1403,7 +1400,6 @@ aside #arrow img {
   border-radius: 0;
   border: none;
   z-index: 2;
-  min-height: 5vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1412,7 +1408,6 @@ aside #arrow img {
     width: 12%;
     padding: 0.7%;
     font-size: 0.7em;
-    height: 6vh;
   }
 }
 

@@ -40,7 +40,7 @@ if (window.matchMedia('(max-width: 768px)').matches){
     }; // cookies consent function
 
     setTimeout(function(){ 
-        $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10%"});
+        $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10vh"});
         $("#navbar, #home, #about, #work, #contact, #header").fadeIn(2000);
         $("body").fadeIn(2000, function(){
             $(this).css({"background-image": "url('images/background.jpg')"});

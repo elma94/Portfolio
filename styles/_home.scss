@@ -8,6 +8,10 @@
     padding-left: 10%;
     padding-right: 10%;
     
+    @media only screen and (max-width: 768px){
+        height: 65vh;
+        margin: 0;
+    }
 
    @media only screen and (min-width: 768px){
        display: flex;
@@ -31,6 +35,10 @@
     padding: 1px;
     flex-shrink: 0;
     
+    @media only screen and (max-width: 768px){
+        font-size: 3.88em;
+    }
+
 
         @media only screen and (min-width: 768px){
             display: flex;
@@ -52,7 +60,11 @@
     flex-direction: row;
     font-family: $font-secondary;
     flex-shrink: 0;
-   
+
+    @media only screen and (max-width: 768px){
+        font-size: 1.5em;
+        padding: 2% 0;
+    }
     @media only screen and (min-width: 768px){
         font-size: 1.61em;
         padding: 1% 0;
