@@ -150,7 +150,7 @@ header #vocation {
 
 @media only screen and (max-width: 375px) {
   #home {
-    max-height: 55vh;
+    max-height: 50vh;
   }
 }
 
@@ -179,6 +179,15 @@ header #vocation {
     width: 50vw;
     right: 20vw;
     left: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 55vh;
   }
 }
 
@@ -535,7 +544,7 @@ header #vocation {
 
 @media only screen and (max-width: 375px) {
   #about {
-    max-height: 55vh;
+    max-height: 50vh;
   }
 }
 
@@ -930,7 +939,7 @@ header #vocation {
 
 @media only screen and (max-width: 375px) {
   #work {
-    max-height: 55vh;
+    max-height: 50vh;
   }
 }
 
@@ -1295,7 +1304,7 @@ aside #arrow img {
 
 @media only screen and (max-width: 375px) {
   #contact {
-    max-height: 55vh;
+    max-height: 50vh;
   }
 }
 
