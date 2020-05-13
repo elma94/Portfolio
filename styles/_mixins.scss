@@ -42,4 +42,7 @@
     position: relative;
     top: 15vh;
     height: 65vh;
+    @media only screen and (max-width: 375px){
+        max-height: 55vh;
+    }
 }
