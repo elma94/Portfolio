@@ -971,7 +971,7 @@ header #vocation {
           justify-content: flex-end;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  min-width: 50vw;
+  min-width: 52vw;
   max-height: 100%;
   -webkit-box-shadow: -3px 60px 128px -36px #4e2b94;
           box-shadow: -3px 60px 128px -36px #4e2b94;
@@ -1027,8 +1027,8 @@ header #vocation {
 
 #work #card-container #card-1 {
   height: 90%;
-  -webkit-transform: translate(20vw);
-          transform: translate(20vw);
+  -webkit-transform: translate(25vw);
+          transform: translate(25vw);
   background-image: url("../images/weatherapp.jpg");
   background-size: 100% 100%;
 }
@@ -1042,8 +1042,8 @@ header #vocation {
 }
 
 #work #card-container #card-2 {
-  -webkit-transform: translate(30vw);
-          transform: translate(30vw);
+  -webkit-transform: translate(35vw);
+          transform: translate(35vw);
   height: 70%;
   background-image: url("../images/jsgame.jpg");
   background-size: 100% 100%;

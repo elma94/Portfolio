@@ -185,23 +185,26 @@ var up=0;
        
         
         if (window.matchMedia('(max-width: 768px)').matches){
-           
+            $("#card-3").hide();
+            $("#card-4").hide();
+            $("#card-5").hide();
+
             $("#card-2").on("click", function openCard2(){
-            
+
                 $("#card-2").css({
                     "height": "90%",
-                    "transform": "translate(-40vw, 0)",
+                    "transform": "translate(-25vw, 0)",
                 })
         
-                $("#card-1").animate({
-                    "transform": "translate(-50vw, 0)",
+                $("#card-1").css({
+                    "transform": "translate(-35vw)",
                     "height" : "70%"
-                },500, )
+                } )
         
                 $("#card-3").show();
         
                 $("#card-3").css({
-                    "transform": "translate(-30vw, 0)",
+                    "transform": "translate(-15vw, 0)",
                     "height" : "70%"
                 })
         
@@ -217,26 +220,29 @@ var up=0;
                     })
                     
                     $("#card-3").hide();
+                    $("#card-4").hide();
+                    $("#card-5").hide();
                 }) // card 1 inside 2
         
                 $("#card-3").on("click", function openCard3(){
                     
-                    $("#card-1").hide();
+                    $("#card-1, #card-5").hide();
+                    
         
                     $("#card-3").css({
                         "height": "90%",
-                        "transform": "translate(-40vw, 0)",
+                        "transform": "translate(-25vw, 0)",
                     })
             
                     $("#card-2").css({
-                        "transform": "translate(-50vw, 0)",
+                        "transform": "translate(-35vw, 0)",
                         "height" : "70%"
                     })
             
                     $("#card-4").show();
             
                     $("#card-4").css({
-                        "transform": "translate(-30vw, 0)",
+                        "transform": "translate(-15vw, 0)",
                         "height" : "70%"
                     })
         
@@ -244,18 +250,19 @@ var up=0;
         
                         $("#card-2").css({
                             "height": "90%",
-                            "transform": "translate(-40vw, 0)",
+                            "transform": "translate(-25vw, 0)",
                         })
                 
                         $("#card-1").show().css({
-                            "transform": "translate(-50vw, 0)",
+                            "transform": "translate(-35vw, 0)",
                             "height" : "70%"
                         })
                 
                         $("#card-3").show();
+                        $("#card-5").hide();
                 
                         $("#card-3").css({
-                            "transform": "translate(-30vw, 0)",
+                            "transform": "translate(-15vw, 0)",
                             "height" : "70%"
                         })
                     }) // card 2 inside 3
@@ -268,18 +275,18 @@ var up=0;
                            
                             $("#card-4").css({
                                 "height": "90%",
-                                "transform": "translate(-40vw, 0)",
+                                "transform": "translate(-25vw, 0)",
                             })
                     
                             $("#card-3").css({
-                                "transform": "translate(-50vw, 0)",
+                                "transform": "translate(-35vw, 0)",
                                 "height" : "70%"
                             })
                     
                             $("#card-5").show();
                     
                             $("#card-5").css({
-                                "transform": "translate(-30vw, 0)",
+                                "transform": "translate(-15vw, 0)",
                                 "height" : "70%"
                             })
         
@@ -287,18 +294,18 @@ var up=0;
                                 $("#card-1").hide();
                                 $("#card-3").css({
                                     "height": "90%",
-                                    "transform": "translate(-40vw, 0)",
+                                    "transform": "translate(-25vw, 0)",
                                 })
                         
                                 $("#card-2").show().css({
-                                    "transform": "translate(-50vw, 0)",
+                                    "transform": "translate(-35vw, 0)",
                                     "height" : "70%"
                                 })
                         
                                 $("#card-4").show();
                         
                                 $("#card-4").css({
-                                    "transform": "translate(-30vw, 0)",
+                                    "transform": "translate(-15vw, 0)",
                                     "height" : "70%"
                                 })
                             }) //card 3 inside 4
@@ -311,11 +318,11 @@ var up=0;
         
                                 $("#card-5").css({
                                     "height": "90%",
-                                    "transform": "translate(-40vw, 0)",
+                                    "transform": "translate(-25vw, 0)",
                                 })
                         
                                 $("#card-4").css({
-                                    "transform": "translate(-50vw, 0)",
+                                    "transform": "translate(-35vw, 0)",
                                     "height" : "70%"
                                 })
         
@@ -325,18 +332,18 @@ var up=0;
                                 
                                     $("#card-4").css({
                                         "height": "90%",
-                                        "transform": "translate(-40vw, 0)",
+                                        "transform": "translate(-25vw, 0)",
                                     })
                             
                                     $("#card-3").show().css({
-                                        "transform": "translate(-50vw, 0)",
+                                        "transform": "translate(-35vw, 0)",
                                         "height" : "70%"
                                     })
                             
                                     $("#card-5").show();
                             
                                     $("#card-5").css({
-                                        "transform": "translate(-30vw, 0)",
+                                        "transform": "translate(-15vw, 0)",
                                         "height" : "70%"
                                     })
         
