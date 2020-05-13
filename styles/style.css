@@ -64,6 +64,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  header {
+    padding-top: 10vh;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   header #description {
     display: -webkit-box;
@@ -142,18 +148,30 @@ header #vocation {
   padding-right: 10%;
 }
 
+@media only screen and (max-width: 375px) {
+  #home {
+    max-height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #home {
+    top: 20vh;
+    bottom: 20vh;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #home {
-    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 65vh;
     padding: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
     width: 50vw;
     right: 20vw;
     left: 20vw;
-    top: 10vh;
   }
 }
 
@@ -183,24 +201,16 @@ header #vocation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 0.9em;
+    font-size: 3.88em;
     margin: 5% 0 0 0;
     padding: 0;
     width: 30vw;
   }
 }
 
-#home-heading span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.5em;
-  height: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  #home-heading span {
-    font-size: 3.88em;
+@media only screen and (min-width: 1440px) {
+  #home-heading {
+    font-size: 6.44em;
   }
 }
 
@@ -213,37 +223,21 @@ header #vocation {
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: "Gayathri", sans-serif;
-  padding-top: 2%;
-  padding-bottom: 2%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
 @media only screen and (min-width: 768px) {
   #home-subheading {
-    padding-top: 1%;
+    font-size: 1.61em;
+    padding: 1% 0;
   }
 }
 
-#home-subheading span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.7em;
-}
-
-#home-subheading #slash {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 4%;
-}
-
-@media only screen and (min-width: 768px) {
-  #home-subheading #slash {
-    margin: 0 2% 0 0;
-    width: 15%;
+@media only screen and (min-width: 1440px) {
+  #home-subheading {
+    font-size: 2.27em;
+    padding: 1% 0;
   }
 }
 
@@ -275,7 +269,7 @@ header #vocation {
   #cta {
     margin: 0;
     width: 70%;
-    min-width: 30vw;
+    min-width: 25vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,7 +283,6 @@ header #vocation {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 10%;
     margin-top: 0;
   }
 }
@@ -327,7 +320,6 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
-  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
   margin-bottom: 3vh;
@@ -340,6 +332,7 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 1em;
+    height: 6vh;
   }
 }
 
@@ -348,7 +341,6 @@ header #vocation {
     margin: 0;
     font-size: 1.1em;
     width: 50%;
-    height: 98%;
   }
 }
 
@@ -380,13 +372,13 @@ header #vocation {
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
+  height: calc(6vh - 3px);
 }
 
 @media only screen and (min-width: 768px) {
   #cta #button2 {
     margin: 0;
     width: 50%;
-    height: 90%;
     margin-left: 2%;
   }
 }
@@ -519,6 +511,19 @@ header #vocation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  #about {
+    max-height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #about {
+    top: 20vh;
+    bottom: 20vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -727,7 +732,6 @@ header #vocation {
 
 #about #about-heading #about-cta {
   position: relative;
-  min-height: 7%;
   margin-bottom: 2%;
   width: auto;
   font-family: "Montserrat", sans-serif;
@@ -751,7 +755,6 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
-  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
 }
@@ -762,6 +765,7 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.9em;
+    height: 6vh;
   }
 }
 
@@ -792,7 +796,6 @@ header #vocation {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     background-color: #d310fa;
-    border: 1.5px solid #d310fa;
     padding: 0.7%;
     cursor: pointer;
   }
@@ -804,6 +807,7 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.8em;
+    height: 6vh;
   }
 }
 
@@ -814,7 +818,6 @@ header #vocation {
     display: -ms-flexbox;
     display: flex;
     min-width: 20vw;
-    min-height: 7%;
     margin-top: 0;
     margin-bottom: 2%;
   }
@@ -846,6 +849,7 @@ header #vocation {
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
+  height: calc(6vh - 3px);
 }
 
 @media only screen and (max-width: 375px) {
@@ -878,6 +882,7 @@ header #vocation {
     font-weight: bold;
     padding: 0.7%;
     cursor: pointer;
+    height: calc(6vh - 3px);
   }
 }
 
@@ -901,6 +906,19 @@ header #vocation {
           flex-direction: column;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  #work {
+    max-height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #work {
+    top: 20vh;
+    bottom: 20vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1092,7 +1110,7 @@ header #vocation {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 5%;
-  height: 20%;
+  height: 15%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1142,10 +1160,8 @@ header #vocation {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
-  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
-  height: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1154,6 +1170,7 @@ header #vocation {
     width: 12%;
     padding: 0.7%;
     font-size: 0.7em;
+    height: 6vh;
   }
 }
 
@@ -1164,12 +1181,11 @@ header #vocation {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: calc(98.6% - 3px);
+    width: 98.6%;
   }
 }
 
 #work .work-buttons .button-url {
-  height: 50%;
   margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1195,6 +1211,7 @@ header #vocation {
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
+  height: calc(6vh - 3px);
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -1254,6 +1271,19 @@ aside #arrow img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 375px) {
+  #contact {
+    max-height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #contact {
+    top: 20vh;
+    bottom: 20vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1364,7 +1394,6 @@ aside #arrow img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: #d310fa;
-  border: 1.5px solid #d310fa;
   padding: 0.7%;
   cursor: pointer;
   color: white;
@@ -1372,6 +1401,7 @@ aside #arrow img {
   text-decoration: none;
   -webkit-appearance: none;
   border-radius: 0;
+  border: none;
   z-index: 2;
   min-height: 5vh;
 }
@@ -1382,6 +1412,7 @@ aside #arrow img {
     width: 12%;
     padding: 0.7%;
     font-size: 0.7em;
+    height: 6vh;
   }
 }
 

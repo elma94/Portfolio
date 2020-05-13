@@ -134,7 +134,7 @@
         flex-direction: column;
         justify-content: flex-end;
         margin-top: 5%;
-        height: 20%;
+        height: 15%;
         @media only screen and (min-width: 768px){
             height: auto;
             margin-top: 5%
@@ -152,17 +152,14 @@
         }
         .button-git{
             @include primaryButton(98.6%, 0.7em);
-            height: 50%;
-            
             @media only screen and (min-width: 768px){
                 margin-left: 0;
                 margin-bottom: 2%;
                 align-self: center;
-                width: calc(98.6% - 3px);
+                width: 98.6%;
             }
         }
         .button-url{
-            height: 50%;
             margin-top: 3%;
             @include secondaryButton(calc(98.6% - 3px), 0.7em);
             align-self: center;

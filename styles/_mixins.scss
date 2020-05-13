@@ -15,14 +15,15 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         background-color: $color-pink;
-        border: 1.5px solid $color-pink;
         padding: 0.7%;
         cursor: pointer;
+       
         @media only screen and (min-width: 768px){
             margin-left: 15%;
             width: 12%;
             padding: 0.7%;
             font-size: $font-size;
+            height: 6vh;
         }
 }
 
@@ -36,6 +37,7 @@
     font-weight: bold;
     padding: 0.7%;
     cursor: pointer;
+    height: calc(6vh - 3px);
 }
 
 @mixin positioning(){
@@ -45,4 +47,8 @@
     @media only screen and (max-width: 375px){
         max-height: 55vh;
     }
+    @media only screen and (min-width: 1440px){
+        top: 20vh;
+        bottom: 20vh;
+        }
 }

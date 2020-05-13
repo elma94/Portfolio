@@ -163,7 +163,6 @@
         }
         #about-cta{
             position: relative;
-            min-height: 7%;
             margin-bottom: 2%;
             @include primaryButton(auto, 0.9em);
             @media only screen and (max-width: 375px){
@@ -177,7 +176,6 @@
                 margin-left: 0;
                 display: flex;
                 min-width: 20vw;
-                min-height: 7%;
                 margin-top: 0;
                 margin-bottom: 2%;
             }
