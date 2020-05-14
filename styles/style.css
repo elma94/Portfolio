@@ -20,7 +20,6 @@ html, body {
     background-size: 100% 120%;
     background-position-y: -100px;
     background-position-x: 30px;
-    font-size: 1.1em;
   }
 }
 
@@ -223,7 +222,7 @@ header #vocation {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 3.88em;
+    font-size: 3.8em;
     margin: 5% 0 0 0;
     padding: 0;
     width: 30vw;
@@ -232,7 +231,7 @@ header #vocation {
 
 @media only screen and (min-width: 1440px) {
   #home-heading {
-    font-size: 6.44em;
+    font-size: 5.4em;
   }
 }
 
