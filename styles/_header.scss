@@ -1,5 +1,9 @@
 header{
-    @include flexCentered(row);
+    //@include flexCentered(row);
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
     position: absolute;
     top: 0;
     padding-top: 5vh;
@@ -17,19 +21,24 @@ header{
         padding-top: 10vh;
     }
 
-    @media only screen and (min-width: 768px){
         #description{
-            display: flex;
-            flex-direction: row;
-            justify-items: center;
-            align-items: center;
-        }
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            @media only screen and (min-width: 768px){
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                align-items: center;
+            }
+            
     }
     
     #logo{
         width: 20vw;
         display:flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 10%;
         align-self: center;
         z-index: 6;
         cursor: pointer;
