@@ -56,7 +56,9 @@ header {
             flex-direction: row;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
 }
 
@@ -88,7 +90,9 @@ header #description {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    justify-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -103,11 +107,20 @@ header #logo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 10%;
   -ms-flex-item-align: center;
       align-self: center;
   z-index: 6;
+  padding-left: 10%;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  header #logo {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 header #logo img {
