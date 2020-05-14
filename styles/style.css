@@ -305,7 +305,7 @@ header #vocation {
   #cta {
     margin: 0;
     width: 70%;
-    min-width: 25vw;
+    max-width: 30vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -547,6 +547,7 @@ header #vocation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-color: black;
+  padding: 0 10%;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -574,6 +575,7 @@ header #vocation {
     z-index: 2;
     font-size: 0.8em;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -581,14 +583,12 @@ header #vocation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: absolute;
-  top: 0;
+  top: 5vh;
   height: 60%;
   width: auto;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -638,8 +638,6 @@ header #vocation {
           justify-content: flex-end;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -655,24 +653,26 @@ header #vocation {
 }
 
 #about #about-heading #about-name {
-  font-size: 1.4em;
-  letter-spacing: 0.15em;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   z-index: 1;
+  padding-bottom: 3%;
 }
 
 @media only screen and (min-width: 768px) {
   #about #about-heading #about-name {
     font-size: 3em;
     letter-spacing: 0;
+    padding: 0;
   }
 }
 
 #about #about-heading #location {
   font-size: 1.2em;
   font-family: "Gayathri", sans-serif;
-  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -684,7 +684,7 @@ header #vocation {
 #about #about-heading #skills {
   font-family: "Gayathri", sans-serif;
   font-size: 0.65em;
-  padding-top: 1%;
+  padding-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,6 +700,7 @@ header #vocation {
 @media only screen and (min-width: 768px) {
   #about #about-heading #skills {
     padding-top: 2vh;
+    padding-bottom: 0;
   }
 }
 
@@ -729,9 +730,13 @@ header #vocation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 2%;
+  padding-bottom: 5%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+#about #about-heading #bio strong {
+  letter-spacing: 0.15em;
 }
 
 @media only screen and (min-width: 768px) {
