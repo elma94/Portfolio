@@ -3,12 +3,14 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    padding-bottom: 20vh;
 
     @media only screen and (min-width: 768px){
         width: 80vw;
         height: 50%;
         position: relative;
         margin-left: 20vw;
+        padding-bottom: 0;
     }
 
     #card-container{

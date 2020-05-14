@@ -190,7 +190,7 @@ header #vocation {
 
 @media only screen and (max-width: 768px) {
   #home {
-    height: 65%;
+    height: 65vh;
     margin: 0;
     padding-bottom: 20vh;
   }
@@ -238,7 +238,7 @@ header #vocation {
 
 @media only screen and (max-width: 768px) {
   #home-heading {
-    font-size: 3.2em;
+    font-size: 3.4em;
   }
 }
 
@@ -568,7 +568,7 @@ header #vocation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background-color: black;
-  padding: 0 10%;
+  padding: 0 10% 20vh 10%;
   border-top: 2px solid #b727fa;
 }
 
@@ -969,6 +969,7 @@ header #vocation {
           flex-direction: column;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding-bottom: 20vh;
 }
 
 @media only screen and (max-width: 375px) {
@@ -990,6 +991,7 @@ header #vocation {
     height: 50%;
     position: relative;
     margin-left: 20vw;
+    padding-bottom: 0;
   }
 }
 
@@ -1334,6 +1336,7 @@ aside #arrow img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-size: 1.5em;
+  padding-bottom: 20vh;
 }
 
 @media only screen and (max-width: 375px) {
@@ -1358,6 +1361,7 @@ aside #arrow img {
     width: 35vw;
     bottom: 0;
     font-size: 1em;
+    padding: 0;
   }
 }
 
