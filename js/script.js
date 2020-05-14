@@ -41,15 +41,19 @@ if (window.matchMedia('(max-width: 768px)').matches){
 
     setTimeout(function(){ 
         $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10vh"});
-        $("#navbar, #home, #about, #work, #contact, #header").fadeIn(2000);
+       
         $("body").fadeIn(2000, function(){
             $(this).css({"background-image": "url('images/background.jpg')"});
         })
+        
         //$("#about, #work").css({"top": "15vh"});
         if (window.matchMedia('(max-width: 768px)').matches){
             //$("#home, #work, #contact").css({"top": "15%"});
             //$("#contact").css({"top": "15vh"});
+            $("#home").slideDown(2000);
+            $("#navbar").fadeIn(2000);
         } else if(window.matchMedia('(min-width: 768px)').matches){
+            $("#navbar, #home, #about, #work, #contact, #header").fadeIn(2000);
             $("#about").css({"top": "15vh"});
             //$("#contact").css({"top": "20vh"});
             $("#work").css({"top": "10vh"});
@@ -119,8 +123,8 @@ var up=0;
    function openHome(){
         $("#home").slideDown(1000);
         $("#about").slideDown(1000).css({"display": "none"});
-        $("#work, #contact").hide();
-        $("#header, #name, #vocation").show();
+        $("#work, #about, #contact").hide();
+        $("#header, #logo, #name, #vocation").show();
         $("#contact_btn, #work_btn, #about_btn").css({"filter": "brightness(100%)", "transform": "scale(1)"});
         $("#home_btn").css({"filter": "brightness(200%)", "transform": "scale(1.2)"});
     } // open home section function
