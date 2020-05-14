@@ -143,7 +143,7 @@ var up=0;
 
         if (window.matchMedia('(max-width: 768px)').matches){
             //$("#about").css({"background-image": "url('images/about_me_photo.jpg')","z-index": "0", "top": "0"});
-            //$("#logo").hide();
+            $("#logo").hide();
         } else if(window.matchMedia('(min-width: 768px)').matches){
 
         }

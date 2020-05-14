@@ -9,12 +9,14 @@
     flex-shrink: 0;
     background-color: black;
     padding: 0 10%;
+    border-top: 2px solid $color-pink;
 
     @media only screen and (min-width: 768px){
         position: relative;
         bottom: 0vh;
         height: 40vh;
         width: 100vw;
+        border-top: none;
         top: 0vh;
         justify-content: flex-start;
         align-self: center;
@@ -31,7 +33,7 @@
         display: flex;
         align-self: flex-start;
         position: absolute;
-        top: 5vh;
+        top: -10vh;
         height: 60%;
         width:auto;
         
@@ -58,7 +60,7 @@
             width: 55vw;
             background-color: black;
             height: 70vh;
-            border-top: 2px solid rgb(126, 110, 126);
+            border-top: 2px solid $color-pink;
             position: absolute; 
             left: -20vw; 
             z-index: -1;

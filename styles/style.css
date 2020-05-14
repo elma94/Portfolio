@@ -561,6 +561,7 @@ header #vocation {
       flex-shrink: 0;
   background-color: black;
   padding: 0 10%;
+  border-top: 2px solid #d310fa;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -576,6 +577,7 @@ header #vocation {
     bottom: 0vh;
     height: 40vh;
     width: 100vw;
+    border-top: none;
     top: 0vh;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -599,7 +601,7 @@ header #vocation {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: absolute;
-  top: 5vh;
+  top: -10vh;
   height: 60%;
   width: auto;
 }
@@ -629,7 +631,7 @@ header #vocation {
     width: 55vw;
     background-color: black;
     height: 70vh;
-    border-top: 2px solid #7e6e7e;
+    border-top: 2px solid #d310fa;
     position: absolute;
     left: -20vw;
     z-index: -1;
