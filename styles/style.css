@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   width: auto;
   overflow: hidden;
   position: relative;
@@ -38,8 +38,8 @@ header {
       align-content: center;
   position: absolute;
   top: 0;
-  height: 10%;
-  padding-top: 5%;
+  height: 10vh;
+  padding-top: 5vh;
   width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -175,6 +175,12 @@ header #vocation {
   padding-right: 10%;
 }
 
+@media only screen and (max-width: 375px) {
+  #home {
+    max-height: 65vh;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   #home {
     top: 20vh;
@@ -186,7 +192,7 @@ header #vocation {
   #home {
     height: 65%;
     margin: 0;
-    padding-bottom: 20%;
+    padding-bottom: 20vh;
   }
 }
 
@@ -454,8 +460,8 @@ header #vocation {
   flex-shrink: 0;
   position: absolute;
   bottom: 0;
-  height: 10%;
-  padding: 5% 0;
+  height: 10vh;
+  padding: 5vh 0;
   left: 5%;
   right: 5%;
   z-index: 5;
@@ -564,6 +570,12 @@ header #vocation {
   background-color: black;
   padding: 0 10%;
   border-top: 2px solid #b727fa;
+}
+
+@media only screen and (max-width: 375px) {
+  #about {
+    max-height: 65vh;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -959,6 +971,12 @@ header #vocation {
       flex-shrink: 0;
 }
 
+@media only screen and (max-width: 375px) {
+  #work {
+    max-height: 65vh;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   #work {
     top: 20vh;
@@ -1316,6 +1334,12 @@ aside #arrow img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 375px) {
+  #contact {
+    max-height: 65vh;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
