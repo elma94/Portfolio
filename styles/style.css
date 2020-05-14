@@ -916,8 +916,7 @@ header #vocation {
 
 @media only screen and (min-width: 768px) {
   #about #about-heading #cv {
-    min-height: 7%;
-    width: 20vw;
+    width: calc(20vw - 3px);
   }
 }
 
@@ -1446,7 +1445,7 @@ aside #arrow img {
 @media only screen and (min-width: 768px) {
   #contact input[type=submit] {
     margin-bottom: 2%;
-    width: 40%;
+    width: 50%;
     margin-left: 0;
     height: 6vh;
   }
