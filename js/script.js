@@ -2,9 +2,11 @@ setTimeout(function(){
     $("#navbar, #home, #about, #work, #contact, #sidebar, #header").hide();
     $("body, html").css({"background-image": "none", "background-color": "black"});
     if (window.matchMedia('(max-width: 768px)').matches){
-        $("#header").css({"position": "absolute", "top": "45%"});
+        $("#header").css({"position": "absolute"});
     } else if(window.matchMedia('(min-width: 768px)').matches){
-        $("#header").css({"position": "absolute", "top": "35%", "left": "15%"});
+        $("#header").css({"position": "absolute", "width": "100vw", "top": "42.5vh", "left": "20vw"});
+        $("#logo").css({"transform": "translate(10vh)"});
+        $("#header").css({"transform": "scale(1.2)"});
     }
     $("#header").fadeIn(2000);
 });
@@ -41,7 +43,7 @@ if (window.matchMedia('(max-width: 768px)').matches){
 
     setTimeout(function(){ 
         $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10vh"});
-       
+        $("#logo, #header").css({"transform": "none"});
         $("body").fadeIn(2000, function(){
             $(this).css({"background-image": "url('images/background.jpg')"});
         })
