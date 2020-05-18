@@ -1038,8 +1038,6 @@ header #vocation {
       align-self: flex-end;
   min-width: 52vw;
   max-height: 100%;
-  -webkit-box-shadow: -3px 60px 128px -36px #4e2b94;
-          box-shadow: -3px 60px 128px -36px #4e2b94;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1094,7 +1092,7 @@ header #vocation {
   height: 90%;
   -webkit-transform: translate(25vw);
           transform: translate(25vw);
-  background-image: url("../images/weatherapp.jpg");
+  background-image: url("../images/weatherapp.png");
   background-size: 100% 100%;
 }
 
@@ -1110,7 +1108,7 @@ header #vocation {
   -webkit-transform: translate(35vw);
           transform: translate(35vw);
   height: 70%;
-  background-image: url("../images/jsgame.jpg");
+  background-image: url("../images/jsgame.png");
   background-size: 100% 100%;
 }
 
@@ -1129,7 +1127,6 @@ header #vocation {
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-image: url("../images/bootstrap.jpg");
-  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1141,7 +1138,7 @@ header #vocation {
 }
 
 #work #card-container #card-4 {
-  background-image: url("../images/website.jpg");
+  background-image: url("../images/website.png");
   background-size: 100% 100%;
 }
 
@@ -1154,7 +1151,8 @@ header #vocation {
 }
 
 #work #card-container #card-5 {
-  background-image: url("../images/portfolio.jpg");
+  background-image: url("../images/portfolio.png");
+  background-size: 100% 100%;
 }
 
 @media only screen and (min-width: 768px) {

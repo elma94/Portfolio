@@ -35,7 +35,7 @@
             align-self: flex-end;
             min-width: 52vw;
             max-height: 100%;
-            box-shadow: -3px 60px 128px -36px rgba(78,43,148,1);
+            //box-shadow: -3px 60px 128px -36px rgba(78,43,148,1);
 
             @media only screen and (min-width: 768px){
                 min-width: 12vw;
@@ -80,7 +80,7 @@
         #card-1{
             height: 90%;
             transform: translate(25vw);
-           background-image: url("../images/weatherapp.jpg");
+           background-image: url("../images/weatherapp.png");
             background-size: 100% 100%;
             @media only screen and (min-width: 768px){
                 transform: none;
@@ -92,7 +92,7 @@
         #card-2{
            transform: translate(35vw);
            height: 70%;
-           background-image: url("../images/jsgame.jpg");
+           background-image: url("../images/jsgame.png");
             background-size: 100% 100%;
            @media only screen and (min-width: 768px){
         transform: none;
@@ -104,7 +104,6 @@
             display: flex;
             align-self: flex-end;
             background-image: url("../images/bootstrap.jpg");
-            background-size: cover;
             @media only screen and (min-width: 768px){
                 transform: none; 
                 height: 100%;
@@ -113,7 +112,7 @@
         }
 
         #card-4{
-            background-image: url("../images/website.jpg");
+            background-image: url("../images/website.png");
             background-size: 100% 100%;
             @media only screen and (min-width: 768px){
                 transform: none; 
@@ -122,7 +121,8 @@
         }
 
         #card-5{
-            background-image: url("../images/portfolio.jpg");
+            background-image: url("../images/portfolio.png");
+            background-size: 100% 100%;
             @media only screen and (min-width: 768px){
                 transform: none; 
                 height: 100%;
