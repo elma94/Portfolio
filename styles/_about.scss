@@ -60,7 +60,9 @@
             width: 55vw;
             background-color: black;
             height: 70vh;
-            border-top: 2px solid $color-pink;
+            border-top: 2px solid;
+            border-image-source: linear-gradient(45deg, rgb(0, 108, 180), rgb(162, 3, 202));
+            border-image-slice: 1;
             position: absolute; 
             left: -20vw; 
             z-index: -1;

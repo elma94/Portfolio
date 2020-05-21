@@ -82,6 +82,9 @@
             transform: translate(25vw);
            background-image: url("../images/weatherapp.png");
             background-size: 100% 100%;
+            // border-top: 2px solid;
+            // border-image-source: linear-gradient(45deg, rgb(0, 108, 180), rgb(162, 3, 202));
+            // border-image-slice: 1;
             @media only screen and (min-width: 768px){
                 transform: none;
                 height: 100%;

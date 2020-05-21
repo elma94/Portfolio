@@ -376,7 +376,7 @@ header #vocation {
   font-size: 1em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #b727fa;
+  background: linear-gradient(45deg, #006cb4, #a203ca);
   padding: 0.7%;
   height: 6vh;
   cursor: pointer;
@@ -425,7 +425,9 @@ header #vocation {
   width: 100%;
   font-size: 0.9em;
   background-color: rgba(25, 25, 51, 0.575);
-  border: 1.5px solid #b727fa;
+  border: 1.5px solid;
+  border-image-source: linear-gradient(45deg, #006cb4, #a203ca);
+  border-image-slice: 1;
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
@@ -647,7 +649,9 @@ header #vocation {
     width: 55vw;
     background-color: black;
     height: 70vh;
-    border-top: 2px solid #b727fa;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(45deg, #006cb4, #a203ca);
+    border-image-slice: 1;
     position: absolute;
     left: -20vw;
     z-index: -1;
@@ -820,7 +824,7 @@ header #vocation {
   font-size: 0.9em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #b727fa;
+  background: linear-gradient(45deg, #006cb4, #a203ca);
   padding: 0.7%;
   height: 6vh;
   cursor: pointer;
@@ -861,7 +865,7 @@ header #vocation {
     font-size: 0.8em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background-color: #b727fa;
+    background: linear-gradient(45deg, #006cb4, #a203ca);
     padding: 0.7%;
     height: 6vh;
     cursor: pointer;
@@ -911,7 +915,9 @@ header #vocation {
   width: auto;
   font-size: 0.9em;
   background-color: rgba(25, 25, 51, 0.575);
-  border: 1.5px solid #b727fa;
+  border: 1.5px solid;
+  border-image-source: linear-gradient(45deg, #006cb4, #a203ca);
+  border-image-slice: 1;
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
@@ -949,7 +955,9 @@ header #vocation {
     width: 46%;
     font-size: 0.8em;
     background-color: rgba(25, 25, 51, 0.575);
-    border: 1.5px solid #b727fa;
+    border: 1.5px solid;
+    border-image-source: linear-gradient(45deg, #006cb4, #a203ca);
+    border-image-slice: 1;
     font-weight: bold;
     padding: 0.7%;
     cursor: pointer;
@@ -1229,7 +1237,7 @@ header #vocation {
   font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #b727fa;
+  background: linear-gradient(45deg, #006cb4, #a203ca);
   padding: 0.7%;
   height: 6vh;
   cursor: pointer;
@@ -1277,7 +1285,9 @@ header #vocation {
   width: calc(98.6% - 3px);
   font-size: 0.7em;
   background-color: rgba(25, 25, 51, 0.575);
-  border: 1.5px solid #b727fa;
+  border: 1.5px solid;
+  border-image-source: linear-gradient(45deg, #006cb4, #a203ca);
+  border-image-slice: 1;
   font-weight: bold;
   padding: 0.7%;
   cursor: pointer;
@@ -1465,7 +1475,7 @@ aside #arrow img {
   font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: #b727fa;
+  background: linear-gradient(45deg, #006cb4, #a203ca);
   padding: 0.7%;
   height: 6vh;
   cursor: pointer;

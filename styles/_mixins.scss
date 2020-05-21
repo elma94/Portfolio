@@ -14,7 +14,7 @@
         font-size: $font-size;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        background-color: $color-pink;
+        background: linear-gradient(45deg, rgb(0, 108, 180), rgb(162, 3, 202));
         padding: 0.7%;
         height: 6vh;
         cursor: pointer;
@@ -33,7 +33,9 @@
     width: $width;
     font-size: $font-size;
     background-color: rgba(25, 25, 51, 0.575);
-    border: 1.5px solid $color-pink;
+    border: 1.5px solid;
+    border-image-source: linear-gradient(45deg, rgb(0, 108, 180), rgb(162, 3, 202));
+    border-image-slice: 1;
     font-weight: bold;
     padding: 0.7%;
     cursor: pointer;
