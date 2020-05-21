@@ -15,7 +15,9 @@ setTimeout(function(){
 
 $("document").ready(function(){
 
-
+if(window.matchMedia('(min-width: 768px) and (min-height: 800px)').matches){
+    $("body").css({"background-image": "url('images/rotate.jpg')"})
+}
 // S I D E B A R
 
 if (window.matchMedia('(max-width: 768px)').matches){

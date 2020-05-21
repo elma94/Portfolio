@@ -260,7 +260,7 @@ header #vocation {
 
 @media only screen and (min-width: 1440px) {
   #home-heading {
-    font-size: 4anem;
+    font-size: 4em;
   }
 }
 
@@ -293,7 +293,7 @@ header #vocation {
 
 @media only screen and (min-width: 1440px) {
   #home-subheading {
-    font-size: 1.6;
+    font-size: 1.8;
     padding-bottom: 2%;
   }
 }
@@ -916,6 +916,11 @@ header #vocation {
   padding: 0.7%;
   cursor: pointer;
   height: calc(6vh - 3px);
+}
+
+#about #about-heading #cv a {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 375px) {

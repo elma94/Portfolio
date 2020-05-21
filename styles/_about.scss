@@ -191,6 +191,10 @@
         #cv{
             position: relative;
             @include secondaryButton(auto, 0.9em);
+            a{
+                color:white;
+                text-decoration: none;
+            }
             @media only screen and (max-width: 375px){
                 position: relative;
                 float: right;
