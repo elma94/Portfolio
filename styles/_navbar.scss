@@ -11,8 +11,7 @@
     width: auto;
     cursor: pointer;
     
-
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: $desktop-min-width){
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,13 +38,14 @@
         &:active{
             filter: brightness(150%);
         }
-        @media only screen and (min-width: 768px){
+
+        @media only screen and (min-width: $desktop-min-width){
             width: 50%;
         }
         img{
             width: 10vw;
             height: auto;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 width: 50%;
                 height: auto;
                 margin-top: 40%;

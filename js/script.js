@@ -16,7 +16,7 @@ setTimeout(function(){
 $("document").ready(function(){
 
 if(window.matchMedia('(min-width: 768px) and (min-height: 800px)').matches){
-    $("body").css({"background-image": "url('images/rotate.jpg')"})
+    //$("body").css({"background-image": "url('images/rotate.jpg')"})
 }
 // S I D E B A R
 
@@ -27,21 +27,21 @@ if (window.matchMedia('(max-width: 768px)').matches){
         $("#sidebar").fadeIn(2000);
     }, 4000);
 }
-    var cookies = function(){
-        window.cookieconsent.initialise({
-            "palette": {
-              "popup": {
-                "background": "rgba(25, 25, 51, 0.175);",
-                "text": "#6d5685"
-              },
-              "button": {
-                "background": "transparent",
-                "text": "##6d5685",
-                "border": "#d310fa"
-              }
-            }
-          });
-    }; // cookies consent function
+    // var cookies = function(){
+    //     window.cookieconsent.initialise({
+    //         "palette": {
+    //           "popup": {
+    //             "background": "rgba(25, 25, 51, 0.175);",
+    //             "text": "#6d5685"
+    //           },
+    //           "button": {
+    //             "background": "transparent",
+    //             "text": "##6d5685",
+    //             "border": "#d310fa"
+    //           }
+    //         }
+    //       });
+    // }; // cookies consent function
 
     setTimeout(function(){ 
         $("#header").animate({"position": "absolute", "top": "0%", "left": "0%", "height": "10vh"});

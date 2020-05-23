@@ -4,8 +4,10 @@
     flex-shrink: 0;
     font-size: 1.5em;
     padding-bottom: 20vh;
+    padding-left: 10%;
+    padding-right: 10%;
     
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: $desktop-min-width){
         height: 55vh;
         top: 20vh;
         left: 20vw;
@@ -27,7 +29,7 @@
         margin-left: 5%;
         margin-right: 5%;
 
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $desktop-min-width){
             margin-top: 2vh;
             width: 100%;
             height: 100%;
@@ -46,7 +48,7 @@
             border: none;
             font-size: 1em;
             border-bottom: 1.5px solid $color-pink;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 display: flex;
                 
             }
@@ -85,7 +87,7 @@
                 border-radius: 0;
                 border: none;
                 z-index: 2;
-                @media only screen and (min-width: 768px){
+                @media only screen and (min-width: $desktop-min-width){
                     margin-bottom: 2%;
                     width: 50%;
                     margin-left: 0;
@@ -110,7 +112,7 @@
         width: 100%;
        bottom: 0vh;
         z-index: 1;
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $desktop-min-width){
             left: 30vw;
             width: 30vw;
             height: 50vh;

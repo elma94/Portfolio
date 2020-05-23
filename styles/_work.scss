@@ -5,7 +5,7 @@
     flex-shrink: 0;
     padding-bottom: 20vh;
 
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: $desktop-min-width){
         width: 80vw;
         height: 50%;
         position: relative;
@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $desktop-min-width){
             width: 90%;
             float:left;
             height: 45vh;
@@ -35,23 +35,32 @@
             align-self: flex-end;
             min-width: 52vw;
             max-height: 100%;
-            //box-shadow: -3px 60px 128px -36px rgba(78,43,148,1);
 
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $tablet-min-width){
+                font-size: 1.8em;
+                min-width: 45vw;
+            }
+
+            @media only screen and (min-width: $desktop-min-width){
                 min-width: 12vw;
                 max-width: 12vw;
                 margin: 5px;
+                font-size: 1em;
+            }
+            @media only screen and (min-width: $large-desktop-min-width){
+                height: auto;
+                font-size: 1.5em;
             }
         
             .card-title{
                 font-weight: bold;
                 font-family: $font-primary;
-                padding-bottom: 3%;
+                padding-bottom: 4%;
                 font-size: 1.5em;
                 height: 5%;
                 width: 100%;
                 text-align: center;
-                @media only screen and (min-width: 768px){
+                @media only screen and (min-width: $desktop-min-width){
                     font-size: 0.9em;
                     height: auto;
                 }
@@ -70,7 +79,11 @@
                     padding: 1vw 1vw 0vw 1vw;
                     border-radius: 15px;
                 }
-                @media only screen and (min-width: 768px){
+                @media only screen and (min-width: $desktop-min-width){
+                    font-size: 0.7em;
+                    height: auto;
+                }
+                @media only screen and (min-width: $large-desktop-min-width){
                     font-size: 0.7em;
                     height: auto;
                 }
@@ -82,7 +95,7 @@
             transform: translate(25vw);
            background-image: url("../images/weatherapp.png");
             background-size: 100% 100%;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 transform: none;
                 height: 100%;
                 
@@ -94,7 +107,7 @@
            height: 70%;
            background-image: url("../images/jsgame.png");
             background-size: 100% 100%;
-           @media only screen and (min-width: 768px){
+           @media only screen and (min-width: $desktop-min-width){
         transform: none;
            height: 100%;
         }
@@ -104,7 +117,7 @@
             display: flex;
             align-self: flex-end;
             background-image: url("../images/bootstrap.jpg");
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 transform: none; 
                 height: 100%;
                 
@@ -114,7 +127,7 @@
         #card-4{
             background-image: url("../images/website.png");
             background-size: 100% 100%;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 transform: none; 
                 height: 100%;
             }
@@ -123,7 +136,7 @@
         #card-5{
             background-image: url("../images/portfolio.png");
             background-size: 100% 100%;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 transform: none; 
                 height: 100%;
             }
@@ -135,11 +148,9 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-top: 5%;
-        height: 15%;
-        @media only screen and (min-width: 768px){
+        padding-top: 5%;
+        @media only screen and (min-width: $desktop-min-width){
             height: auto;
-            margin-top: 5%
         }
         a{
             height: 100%;
@@ -154,7 +165,7 @@
         }
         .button-git{
             @include primaryButton(98.6%, 0.7em);
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 margin-left: 0;
                 margin-bottom: 2%;
                 align-self: center;

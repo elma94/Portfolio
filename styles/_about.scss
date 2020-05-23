@@ -9,9 +9,15 @@
     flex-shrink: 0;
     background-color: black;
     padding: 0 10% 20vh 10%;
-    border-top: 2px solid $color-pink;
+    border-top: 2px solid;
+            border-image-source: linear-gradient(45deg, rgb(0, 108, 180), rgb(162, 3, 202));
+            border-image-slice: 1;
 
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: $tablet-min-width){
+        font-size: 1.4em;
+    }
+
+    @media only screen and (min-width: $desktop-min-width){
         position: relative;
         bottom: 0vh;
         height: 40vh;
@@ -36,8 +42,10 @@
         top: -10vh;
         height: 60%;
         width:auto;
-        
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $tablet-min-width){
+            top: -15vh;
+        }
+        @media only screen and (min-width: $desktop-min-width){
             display: block;
             margin: 0;
             padding: 0;
@@ -54,7 +62,7 @@
 
     #background-about{
         display: none;
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $desktop-min-width){
             display: block;
             top: 0;
             width: 55vw;
@@ -82,7 +90,7 @@
         justify-content: flex-end;
         flex-shrink: 0;
 
-        @media only screen and (min-width: 768px){
+        @media only screen and (min-width: $desktop-min-width){
             width: 40%;
            height: 60vh;
            justify-content: center;
@@ -98,7 +106,7 @@
             font-family: $font-primary;
             z-index: 1;
             padding-bottom: 3%;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 font-size: 3em;
                 letter-spacing: 0;
                 padding: 0;
@@ -110,7 +118,7 @@
             font-size: 1.2em;
             font-family: $font-secondary;
             padding-bottom: 1%;
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 padding-top: 2vh;
             }
         }
@@ -122,7 +130,7 @@
             flex-direction: row;
             align-items: center;
             
-                @media only screen and (min-width: 768px){
+                @media only screen and (min-width: $desktop-min-width){
                     padding-top: 2vh;
                     padding-bottom: 0;
                 }
@@ -134,7 +142,7 @@
                 padding: 1vw 1vw 0vw 1vw;
                 border-radius: 15px;
                 margin-right: 1.5%;
-                @media only screen and (min-width: 768px){
+                @media only screen and (min-width: $desktop-min-width){
                     padding: 1% 2%;
                 }
             }
@@ -152,10 +160,11 @@
                 letter-spacing: 0.15em;
                 
             }
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 padding-top: 2vh;
+                font-size: 1.2em;
             }
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 width: 30vw;
                 display: flex;
                 flex-direction: column;
@@ -181,7 +190,7 @@
                 @include primaryButton(46%, 0.8em);
             }
 
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 margin-left: 0;
                 display: flex;
                 min-width: 20vw;
@@ -204,7 +213,7 @@
                 min-height: 15%;
                 @include secondaryButton(46%, 0.8em);
             }
-            @media only screen and (min-width: 768px){
+            @media only screen and (min-width: $desktop-min-width){
                 width: calc(20vw - 3px);
                 
             }
