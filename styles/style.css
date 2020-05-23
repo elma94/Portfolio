@@ -83,7 +83,7 @@ header #description {
           justify-content: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   header #description {
     font-size: 2em;
   }
@@ -209,7 +209,7 @@ header #vocation {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,7 +263,7 @@ header #vocation {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #home-heading {
     font-size: 6em;
   }
@@ -311,7 +311,7 @@ header #vocation {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #home-subheading {
     font-size: 2.5em;
   }
@@ -426,7 +426,7 @@ header #vocation {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #cta #button {
     font-size: 1.8em;
   }
@@ -473,7 +473,7 @@ header #vocation {
   height: calc(6vh - 3px);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #cta #button2 {
     font-size: 1.8em;
   }
@@ -643,7 +643,7 @@ header #vocation {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #about {
     font-size: 1.4em;
   }
@@ -684,7 +684,7 @@ header #vocation {
   width: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #about img {
     top: -15vh;
   }
@@ -1120,7 +1120,7 @@ header #vocation {
   max-height: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 900px) {
   #work #card-container .cards {
     font-size: 1.8em;
     min-width: 45vw;
