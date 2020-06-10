@@ -1223,12 +1223,8 @@ header #vocation {
 }
 
 #work #card-container #card-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  background-image: url("../images/bootstrap.jpg");
+  background-image: url("../images/bootstrap.png");
+  background-size: 100% 100%;
 }
 
 @media only screen and (min-width: 1024px) {
