@@ -26,6 +26,10 @@
 
 </head>
 <body>
+<!-- SKIP LINK -->
+    <a id='skip-nav' class='screenreader-text' style="display: none" href='#main-content'>
+        Skip Navigation or Skip to Content
+    </a>
     <header id="header">
         <div id="logo"><img src="images/logo.png" alt="Logo image"></div>
         <div id="description">
@@ -117,8 +121,7 @@
     </section>
 
     <section id="contact">
-        <form id="contact-form" name="frmContact" id="" frmContact="" method="post" action="https://formspree.io/xvoqplrd" enctype="multipart/form-data"
-        onsubmit="return validateContactForm()">
+        <form id="contact-form" name="frmContact" id="" frmContact="" method="post" action="https://formspree.io/xvoqplrd" enctype="multipart/form-data">
             <label for="name">Name</label>
             <input type="text" id="name-input" name="name"  required>
             <label for="email">E-mail</label>
